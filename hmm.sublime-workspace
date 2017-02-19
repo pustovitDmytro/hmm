@@ -1,0 +1,573 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"displayedContacts\t(index.html)"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Co",
+				"Contact"
+			],
+			[
+				"Con",
+				"Contacts\t(index.html)"
+			],
+			[
+				"re",
+				"return\t(index.html)"
+			],
+			[
+				"fu",
+				"function\t(index.html)"
+			],
+			[
+				"Rea",
+				"React.createClass\t(index.html)"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"scre",
+				"screenshot"
+			],
+			[
+				"winli",
+				"winline"
+			],
+			[
+				"Month",
+				"month"
+			],
+			[
+				"J",
+				"jquery"
+			],
+			[
+				"c",
+				"className"
+			],
+			[
+				"s",
+				"showVariable"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"t",
+				"tfoot\tTag"
+			],
+			[
+				"ca",
+				"caption\tTag"
+			],
+			[
+				"p",
+				"placeholder\tAttr"
+			],
+			[
+				"js",
+				"jsonString"
+			],
+			[
+				"a",
+				"argv"
+			],
+			[
+				"clas",
+				"class_"
+			],
+			[
+				"BAS",
+				"BASE_URL"
+			],
+			[
+				"fin",
+				"find_all"
+			],
+			[
+				"el",
+				"elements"
+			],
+			[
+				"json",
+				"jsonString"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"w",
+				"wiev"
+			],
+			[
+				"sele",
+				"selected"
+			],
+			[
+				"i",
+				"items"
+			],
+			[
+				"com",
+				"comments"
+			],
+			[
+				"fil",
+				"films"
+			],
+			[
+				"comme",
+				"comment"
+			],
+			[
+				"get",
+				"getCheap"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"it",
+				"item"
+			],
+			[
+				"item",
+				"item"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"b",
+				"b\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": ".",
+			"settings":
+			{
+				"buffer_size": 1,
+				"line_ending": "Windows",
+				"name": "."
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			],
+			[
+				"id",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"Project: Add Folder"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/pusti/OneDrive/Kpi progects/диплом/прога"
+	],
+	"file_history":
+	[
+		"/C/Users/pusti/OneDrive/code/js/react/contacts/contacts.css",
+		"/C/Users/pusti/OneDrive/code/js/react/contacts/contacts.js",
+		"/C/Users/pusti/OneDrive/code/js/react/contacts/index.html",
+		"/C/Users/pusti/OneDrive/Docs/work and study/розмовник/colors_clothes.txt",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/homework/03.md",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/02-contacts-search/index.html",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/02-contacts-search/style.css",
+		"/C/Users/pusti/OneDrive/code/js/react/contacts/contacts.jsp",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/Материалы/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/02-contacts-search/index.html",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/Материалы/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/01-using-props/index.html",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/Материалы/ReactJS Essential Student/002_Подробнее о компонентах/02-deep-in-components/03-notes-app/index.html",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/Материалы/ReactJS Essential Student/002_Подробнее о компонентах/02-deep-in-components/03-notes-app/notes.js",
+		"/E/Movies/відеоуроки/ITVDN/ReactJS Essential/Материалы/ReactJS Essential Student/001_Введение в React/01-introduction-to-react/00-template/index.html",
+		"/C/Users/pusti/Desktop/buffer/ext/chrome.manifest",
+		"/C/Users/pusti/Desktop/main.js",
+		"/C/Users/pusti/AppData/Local/Temp/Rar$DIa0.229/package.json",
+		"/C/Users/pusti/OneDrive/code/python/parimatch/test.cpp",
+		"/C/Users/pusti/OneDrive/code/python/parimatch/ParsePage.py",
+		"/C/Users/pusti/OneDrive/code/python/mybot_6sem.py",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/winline.py",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/database.py",
+		"/C/Users/pusti/OneDrive/code/python/parimatch/scrapper.py",
+		"/C/Users/pusti/OneDrive/code/python/book_to_pdf/1.html",
+		"/G/linux/start.sh",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab3/sysan3/Source.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/lab4_final/source/Logic.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/lab4_final/source/MyForm.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/sysan4/Logic.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/lab4_final/exe/result.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/sysan4/result.txt",
+		"/C/Users/pusti/Desktop/Числа.html",
+		"/C/Users/pusti/Desktop/character.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab4/sysan4/MyForm.h",
+		"/C/Users/pusti/Downloads/25oct/25oct/25oct/MyForm.h",
+		"/C/Users/pusti/Desktop/phrasal_verbs_all.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab3/sysan3/MyForm.h",
+		"/C/Users/pusti/Desktop/Estimators/Estimators/MyForm.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/АЧР/ARCH_01.dat",
+		"/C/Users/pusti/OneDrive/Kpi progects/АЧР/ATS_Lab_04_new/1.prg",
+		"/C/Users/pusti/OneDrive/Kpi progects/АЧР/ATS_Lab_04_new/1_1.prg",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/sysan3/error.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/sysan3/out.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/spusk/error.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/spusk/1.txt",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/Aug/total.stat",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/sysan3/out_test_sample.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab2/sysan2/Source.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/spusk/out1.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/spusk/out.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/АЧР/ATS_Lab_02_new/Data/1.prg",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/Dst.txt",
+		"/C/Users/pusti/Downloads/in7.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/in5.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/spusk/spusk.cpp",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/sysan2/in_test.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/data.txt",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab2/MyForm.cpp",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab2/MyForm.h",
+		"/C/Users/pusti/Desktop/курсач_4сем_final/Estimators/Estimators/Distributions.cpp",
+		"/C/Users/pusti/Desktop/курсач_4сем_final/Estimators/Estimators/Distributions.h",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab2/spusk/out.txt",
+		"/C/Users/pusti/Desktop/курсач_4сем_final/Estimators/Estimators/MyForm.h",
+		"/C/Users/pusti/Desktop/курсач_4сем_final/Estimators/Estimators/MyForm4h.h",
+		"/E/code_examples/R_stepic/anova.R",
+		"/C/Users/pusti/OneDrive/code/python/1.txt",
+		"/E/code_examples/R_stepic/conditions.R",
+		"/C/Users/pusti/Downloads/multiple regression.R",
+		"/E/code_examples/R_stepic/multiple regression.R",
+		"/C/Users/pusti/OneDrive/Docs/work and study/розмовник/asp.txt",
+		"/C/Users/pusti/Downloads/binomial_regression.R",
+		"/C/Users/pusti/OneDrive/code/R/1.R",
+		"/E/code_examples/R_stepic/categorical.R",
+		"/C/Users/pusti/OneDrive/Docs/work and study/розмовник/math.txt",
+		"/C/Users/pusti/OneDrive/Docs/work and study/розмовник/productivity.txt",
+		"/E/code_examples/R_stepic/simple_regr.R",
+		"/C/Users/pusti/Downloads/simple_regr.R",
+		"/C/Users/pusti/Downloads/cortest.R",
+		"/C/Users/pusti/Downloads/fun1.R",
+		"/C/Users/pusti/Desktop/buffer/site/wordpress-4.6.1-uk/index.html",
+		"/E/code_examples/R_stepic/data frames.R",
+		"/C/Users/pusti/OneDrive/code/python/1.py",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/1.csv",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/lab1.py",
+		"/C/Users/pusti/OneDrive/Kpi progects/системний аналіз/3.csv",
+		"/E/code_examples/R_stepic/save_data.R",
+		"/C/Users/pusti/Downloads/save_data.R",
+		"/E/code_examples/R_stepic/Descriptive statistics.R",
+		"/C/Users/pusti/Desktop/conditions.R",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/screenshot.py",
+		"/C/Users/pusti/OneDrive/code/python/laba.txt",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/beta.py",
+		"/C/Users/pusti/Desktop/buffer/site/wordpress-4.6.1-uk/wordpress/wp-config.php",
+		"/C/Users/pusti/OneDrive/Kpi progects/АЧР/АЧР tasks/ATS_Lab_01_2016/ATS_Lab_01_new/ATS_Lab_01_new/DelphiUnit/matrices.pas",
+		"/C/Users/pusti/OneDrive/code/python/Scrapper_Winline/Aug/11_Aug_results.csv",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/beta.py",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/results.csv",
+		"/C/Users/pusti/Desktop/buffer/html_tests/1.js",
+		"/C/Users/pusti/Desktop/buffer/html_tests/test2.html",
+		"/C/Users/pusti/Desktop/html_tests/test.html",
+		"/C/Users/pusti/Desktop/buffer/html_tests/test.html",
+		"/C/Users/pusti/Desktop/test.html",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/alfaparse.py",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/1.csv",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/1.stat",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/2.stat",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/2.py",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/1/total.stat",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/testing_csv/1.py",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/Aug/total.stat",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/Aug/6_Aug_results.csv",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/test.html",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/bs1.py",
+		"/C/Users/pusti/OneDrive/code/python/scrapping/selenium_beta/text.txt",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/tryall.json",
+		"/C/Users/pusti/OneDrive/code/C#/tryApp/Program.cs",
+		"/C/Users/pusti/Desktop/buffer/trones.txt",
+		"/C/Users/pusti/OneDrive/code/C#/windows_10/App2/App2/BlankPage2.xaml.cs",
+		"/C/Users/pusti/AppData/Local/Programs/Python/Python35-32/pytesser.py",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/test.json",
+		"/E/Movies/відеоуроки/ITVDN/[ITVDN] C# Essential/007_Structures/003_Nested/Nested2/Program.cs",
+		"/C/Users/pusti/Desktop/buffer/all.json",
+		"/C/Users/pusti/OneDrive/code/C#/windows_10/App2/App2/MainPage.xaml.cs",
+		"/C/Users/pusti/OneDrive/code/C#/windows_10/all.json",
+		"/C/Users/pusti/Desktop/all.json",
+		"/C/Users/pusti/OneDrive/code/C#/windows_10/App2/App2/all.json",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/test2.json",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/2.json",
+		"/C/Users/pusti/OneDrive/code/python/daysParser/1.json"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"setConsole",
+			"Rich",
+			"\\t",
+			"time",
+			"\"",
+			"в(.*)в",
+			"в(*)в",
+			",",
+			" ",
+			"   ",
+			"\t",
+			" ",
+			",",
+			" ",
+			"­",
+			"}",
+			",",
+			"7",
+			"\t",
+			"auth",
+			"auth(user)",
+			"user",
+			"[{\"month_name\": \"Січень\", \"id\": 1, \"month_num\": 1, \"day_num\": 1, \"ref\": \"/board/1-1-0-1\"}, {\"month_name\": \"Січень\", \"id\": 2, \"month_num\": 1, \"day_num\": 2, \"ref\": \"/board/1-1-0-215\"}, {\"month_name\": \"Січень\", \"id\": 3, \"month_num\": 1, \"day_num\": 3, \"ref\": \"/board/1-1-0-216\"}, {\"month_name\": \"Січень\", \"id\": 4, \"month_num\": 1, \"day_num\": 4, \"ref\": \"/board/1-1-0-217\"}, {\"month_name\": \"Січень\", \"id\": 5, \"month_num\": 1, \"day_num\": 5, \"ref\": \"/board/1-1-0-218\"}, {\"month_name\": \"Січень\", \"id\": 6, \"month_num\": 1, \"day_num\": 6, \"ref\": \"/board/1-1-0-219\"}, {\"month_name\": \"Січень\", \"id\": 7, \"month_num\": 1, \"day_num\": 7, \"ref\": \"/board/1-1-0-220\"}, {\"month_name\": \"Січень\", \"id\": 8, \"month_num\": 1, \"day_num\": 8, \"ref\": \"/board/1-1-0-221\"}, {\"month_name\": \"Січень\", \"id\": 9, \"month_num\": 1, \"day_num\": 9, \"ref\": \"/board/1-1-0-222\"}, {\"month_name\": \"Січень\", \"id\": 10, \"month_num\": 1, \"day_num\": 10, \"ref\": \"/board/1-1-0-223\"}, {\"month_name\": \"Січень\", \"id\": 11, \"month_num\": 1, \"day_num\": 11, \"ref\": \"/board/1-1-0-224\"}, {\"month_name\": \"Січень\", \"id\": 12, \"month_num\": 1, \"day_num\": 12, \"ref\": \"/board/1-1-0-225\"}, {\"month_name\": \"Січень\", \"id\": 13, \"month_num\": 1, \"day_num\": 13, \"ref\": \"/board/1-1-0-226\"}, {\"month_name\": \"Січень\", \"id\": 14, \"month_num\": 1, \"day_num\": 14, \"ref\": \"/board/1-1-0-227\"}, {\"month_name\": \"Січень\", \"id\": 15, \"month_num\": 1, \"day_num\": 15, \"ref\": \"/board/1-1-0-228\"}, {\"month_name\": \"Січень\", \"id\": 16, \"month_num\": 1, \"day_num\": 16, \"ref\": \"/board/1-1-0-229\"}, {\"month_name\": \"Січень\", \"id\": 17, \"month_num\": 1, \"day_num\": 17, \"ref\": \"/board/1-1-0-230\"}, {\"month_name\": \"Січень\", \"id\": 18, \"month_num\": 1, \"day_num\": 18, \"ref\": \"/board/1-1-0-231\"}, {\"month_name\": \"Січень\", \"id\": 19, \"month_num\": 1, \"day_num\": 19, \"ref\": \"/board/1-1-0-232\"}, {\"month_name\": \"Січень\", \"id\": 20, \"month_num\": 1, \"day_num\": 20, \"ref\": \"/board/1-1-0-233\"}, {\"month_name\": \"Січень\", \"id\": 21, \"month_num\": 1, \"day_num\": 21, \"ref\": \"/board/1-1-0-234\"}, {\"month_name\": \"Січень\", \"id\": 22, \"month_num\": 1, \"day_num\": 22, \"ref\": \"/board/1-1-0-235\"}, {\"month_name\": \"Січень\", \"id\": 23, \"month_num\": 1, \"day_num\": 23, \"ref\": \"/board/1-1-0-236\"}, {\"month_name\": \"Січень\", \"id\": 24, \"month_num\": 1, \"day_num\": 24, \"ref\": \"/board/1-1-0-237\"}, {\"month_name\": \"Січень\", \"id\": 25, \"month_num\": 1, \"day_num\": 25, \"ref\": \"/board/1-1-0-238\"}, {\"month_name\": \"Січень\", \"id\": 26, \"month_num\": 1, \"day_num\": 26, \"ref\": \"/board/1-1-0-239\"}, {\"month_name\": \"Січень\", \"id\": 27, \"month_num\": 1, \"day_num\": 27, \"ref\": \"/board/1-1-0-240\"}, {\"month_name\": \"Січень\", \"id\": 28, \"month_num\": 1, \"day_num\": 28, \"ref\": \"/board/1-1-0-241\"}, {\"month_name\": \"Січень\", \"id\": 29, \"month_num\": 1, \"day_num\": 29, \"ref\": \"/board/1-1-0-242\"}, {\"month_name\": \"Січень\", \"id\": 30, \"month_num\": 1, \"day_num\": 30, \"ref\": \"/board/1-1-0-243\"}, {\"month_name\": \"Січень\", \"id\": 31, \"month_num\": 1, \"day_num\": 31, \"ref\": \"/board/1-1-0-244\"}, {\"month_name\": \"Лютий\", \"id\": 32, \"month_num\": 2, \"day_num\": 1, \"ref\": \"/board/4-1-0-186\"}, {\"month_name\": \"Лютий\", \"id\": 33, \"month_num\": 2, \"day_num\": 2, \"ref\": \"/board/4-1-0-187\"}, {\"month_name\": \"Лютий\", \"id\": 34, \"month_num\": 2, \"day_num\": 3, \"ref\": \"/board/4-1-0-188\"}, {\"month_name\": \"Лютий\", \"id\": 35, \"month_num\": 2, \"day_num\": 4, \"ref\": \"/board/4-1-0-189\"}, {\"month_name\": \"Лютий\", \"id\": 36, \"month_num\": 2, \"day_num\": 5, \"ref\": \"/board/4-1-0-190\"}, {\"month_name\": \"Лютий\", \"id\": 37, \"month_num\": 2, \"day_num\": 6, \"ref\": \"/board/4-1-0-191\"}, {\"month_name\": \"Лютий\", \"id\": 38, \"month_num\": 2, \"day_num\": 7, \"ref\": \"/board/4-1-0-192\"}, {\"month_name\": \"Лютий\", \"id\": 39, \"month_num\": 2, \"day_num\": 8, \"ref\": \"/board/4-1-0-193\"}, {\"month_name\": \"Лютий\", \"id\": 40, \"month_num\": 2, \"day_num\": 9, \"ref\": \"/board/4-1-0-194\"}, {\"month_name\": \"Лютий\", \"id\": 41, \"month_num\": 2, \"day_num\": 10, \"ref\": \"/board/4-1-0-195\"}, {\"month_name\": \"Лютий\", \"id\": 42, \"month_num\": 2, \"day_num\": 11, \"ref\": \"/board/4-1-0-196\"}, {\"month_name\": \"Лютий\", \"id\": 43, \"month_num\": 2, \"day_num\": 12, \"ref\": \"/board/4-1-0-197\"}, {\"month_name\": \"Лютий\", \"id\": 44, \"month_num\": 2, \"day_num\": 13, \"ref\": \"/board/4-1-0-198\"}, {\"month_name\": \"Лютий\", \"id\": 45, \"month_num\": 2, \"day_num\": 14, \"ref\": \"/board/4-1-0-199\"}, {\"month_name\": \"Лютий\", \"id\": 46, \"month_num\": 2, \"day_num\": 15, \"ref\": \"/board/4-1-0-200\"}, {\"month_name\": \"Лютий\", \"id\": 47, \"month_num\": 2, \"day_num\": 16, \"ref\": \"/board/4-1-0-201\"}, {\"month_name\": \"Лютий\", \"id\": 48, \"month_num\": 2, \"day_num\": 17, \"ref\": \"/board/4-1-0-202\"}, {\"month_name\": \"Лютий\", \"id\": 49, \"month_num\": 2, \"day_num\": 18, \"ref\": \"/board/4-1-0-203\"}, {\"month_name\": \"Лютий\", \"id\": 50, \"month_num\": 2, \"day_num\": 19, \"ref\": \"/board/4-1-0-204\"}, {\"month_name\": \"Лютий\", \"id\": 51, \"month_num\": 2, \"day_num\": 20, \"ref\": \"/board/4-1-0-205\"}, {\"month_name\": \"Лютий\", \"id\": 52, \"month_num\": 2, \"day_num\": 21, \"ref\": \"/board/4-1-0-206\"}, {\"month_name\": \"Лютий\", \"id\": 53, \"month_num\": 2, \"day_num\": 22, \"ref\": \"/board/4-1-0-207\"}, {\"month_name\": \"Лютий\", \"id\": 54, \"month_num\": 2, \"day_num\": 23, \"ref\": \"/board/4-1-0-208\"}, {\"month_name\": \"Лютий\", \"id\": 55, \"month_num\": 2, \"day_num\": 24, \"ref\": \"/board/4-1-0-209\"}, {\"month_name\": \"Лютий\", \"id\": 56, \"month_num\": 2, \"day_num\": 25, \"ref\": \"/board/4-1-0-210\"}, {\"month_name\": \"Лютий\", \"id\": 57, \"month_num\": 2, \"day_num\": 26, \"ref\": \"/board/4-1-0-211\"}, {\"month_name\": \"Лютий\", \"id\": 58, \"month_num\": 2, \"day_num\": 27, \"ref\": \"/board/4-1-0-212\"}, {\"month_name\": \"Лютий\", \"id\": 59, \"month_num\": 2, \"day_num\": 28, \"ref\": \"/board/4-1-0-213\"}, {\"month_name\": \"Лютий\", \"id\": 60, \"month_num\": 2, \"day_num\": 29, \"ref\": \"/board/4-1-0-214\"}, {\"month_name\": \"Березень\", \"id\": 61, \"month_num\": 3, \"day_num\": 1, \"ref\": \"/board/3-1-0-32\"}, {\"month_name\": \"Березень\", \"id\": 62, \"month_num\": 3, \"day_num\": 2, \"ref\": \"/board/3-1-0-33\"}, {\"month_name\": \"Березень\", \"id\": 63, \"month_num\": 3, \"day_num\": 3, \"ref\": \"/board/3-1-0-34\"}, {\"month_name\": \"Березень\", \"id\": 64, \"month_num\": 3, \"day_num\": 4, \"ref\": \"/board/3-1-0-35\"}, {\"month_name\": \"Березень\", \"id\": 65, \"month_num\": 3, \"day_num\": 5, \"ref\": \"/board/3-1-0-36\"}, {\"month_name\": \"Березень\", \"id\": 66, \"month_num\": 3, \"day_num\": 6, \"ref\": \"/board/3-1-0-37\"}, {\"month_name\": \"Березень\", \"id\": 67, \"month_num\": 3, \"day_num\": 7, \"ref\": \"/board/3-1-0-38\"}, {\"month_name\": \"Березень\", \"id\": 68, \"month_num\": 3, \"day_num\": 8, \"ref\": \"/board/3-1-0-39\"}, {\"month_name\": \"Березень\", \"id\": 69, \"month_num\": 3, \"day_num\": 9, \"ref\": \"/board/3-1-0-40\"}, {\"month_name\": \"Березень\", \"id\": 70, \"month_num\": 3, \"day_num\": 10, \"ref\": \"/board/3-1-0-41\"}, {\"month_name\": \"Березень\", \"id\": 71, \"month_num\": 3, \"day_num\": 11, \"ref\": \"/board/3-1-0-42\"}, {\"month_name\": \"Березень\", \"id\": 72, \"month_num\": 3, \"day_num\": 12, \"ref\": \"/board/3-1-0-43\"}, {\"month_name\": \"Березень\", \"id\": 73, \"month_num\": 3, \"day_num\": 13, \"ref\": \"/board/3-1-0-44\"}, {\"month_name\": \"Березень\", \"id\": 74, \"month_num\": 3, \"day_num\": 14, \"ref\": \"/board/3-1-0-45\"}, {\"month_name\": \"Березень\", \"id\": 75, \"month_num\": 3, \"day_num\": 15, \"ref\": \"/board/3-1-0-46\"}, {\"month_name\": \"Березень\", \"id\": 76, \"month_num\": 3, \"day_num\": 16, \"ref\": \"/board/3-1-0-47\"}, {\"month_name\": \"Березень\", \"id\": 77, \"month_num\": 3, \"day_num\": 17, \"ref\": \"/board/3-1-0-48\"}, {\"month_name\": \"Березень\", \"id\": 78, \"month_num\": 3, \"day_num\": 18, \"ref\": \"/board/3-1-0-49\"}, {\"month_name\": \"Березень\", \"id\": 79, \"month_num\": 3, \"day_num\": 19, \"ref\": \"/board/3-1-0-50\"}, {\"month_name\": \"Березень\", \"id\": 80, \"month_num\": 3, \"day_num\": 20, \"ref\": \"/board/3-1-0-51\"}, {\"month_name\": \"Березень\", \"id\": 81, \"month_num\": 3, \"day_num\": 21, \"ref\": \"/board/3-1-0-52\"}, {\"month_name\": \"Березень\", \"id\": 82, \"month_num\": 3, \"day_num\": 22, \"ref\": \"/board/3-1-0-53\"}, {\"month_name\": \"Березень\", \"id\": 83, \"month_num\": 3, \"day_num\": 23, \"ref\": \"/board/3-1-0-54\"}, {\"month_name\": \"Березень\", \"id\": 84, \"month_num\": 3, \"day_num\": 24, \"ref\": \"/board/3-1-0-55\"}, {\"month_name\": \"Березень\", \"id\": 85, \"month_num\": 3, \"day_num\": 25, \"ref\": \"/board/3-1-0-56\"}, {\"month_name\": \"Березень\", \"id\": 86, \"month_num\": 3, \"day_num\": 26, \"ref\": \"/board/3-1-0-57\"}, {\"month_name\": \"Березень\", \"id\": 87, \"month_num\": 3, \"day_num\": 27, \"ref\": \"/board/3-1-0-58\"}, {\"month_name\": \"Березень\", \"id\": 88, \"month_num\": 3, \"day_num\": 28, \"ref\": \"/board/3-1-0-59\"}, {\"month_name\": \"Березень\", \"id\": 89, \"month_num\": 3, \"day_num\": 29, \"ref\": \"/board/3-1-0-60\"}, {\"month_name\": \"Березень\", \"id\": 90, \"month_num\": 3, \"day_num\": 30, \"ref\": \"/board/3-1-0-61\"}, {\"month_name\": \"Березень\", \"id\": 91, \"month_num\": 3, \"day_num\": 31, \"ref\": \"/board/3-1-0-62\"}, {\"month_name\": \"Квітень\", \"id\": 92, \"month_num\": 4, \"day_num\": 1, \"ref\": \"/board/2-1-0-2\"}, {\"month_name\": \"Квітень\", \"id\": 93, \"month_num\": 4, \"day_num\": 2, \"ref\": \"/board/2-1-0-3\"}, {\"month_name\": \"Квітень\", \"id\": 94, \"month_num\": 4, \"day_num\": 3, \"ref\": \"/board/2-1-0-4\"}, {\"month_name\": \"Квітень\", \"id\": 95, \"month_num\": 4, \"day_num\": 4, \"ref\": \"/board/2-1-0-5\"}, {\"month_name\": \"Квітень\", \"id\": 96, \"month_num\": 4, \"day_num\": 5, \"ref\": \"/board/2-1-0-6\"}, {\"month_name\": \"Квітень\", \"id\": 97, \"month_num\": 4, \"day_num\": 6, \"ref\": \"/board/2-1-0-7\"}, {\"month_name\": \"Квітень\", \"id\": 98, \"month_num\": 4, \"day_num\": 7, \"ref\": \"/board/2-1-0-8\"}, {\"month_name\": \"Квітень\", \"id\": 99, \"month_num\": 4, \"day_num\": 8, \"ref\": \"/board/2-1-0-9\"}, {\"month_name\": \"Квітень\", \"id\": 100, \"month_num\": 4, \"day_num\": 9, \"ref\": \"/board/2-1-0-10\"}, {\"month_name\": \"Квітень\", \"id\": 101, \"month_num\": 4, \"day_num\": 10, \"ref\": \"/board/2-1-0-11\"}, {\"month_name\": \"Квітень\", \"id\": 102, \"month_num\": 4, \"day_num\": 11, \"ref\": \"/board/2-1-0-12\"}, {\"month_name\": \"Квітень\", \"id\": 103, \"month_num\": 4, \"day_num\": 12, \"ref\": \"/board/2-1-0-13\"}, {\"month_name\": \"Квітень\", \"id\": 104, \"month_num\": 4, \"day_num\": 13, \"ref\": \"/board/2-1-0-14\"}, {\"month_name\": \"Квітень\", \"id\": 105, \"month_num\": 4, \"day_num\": 14, \"ref\": \"/board/2-1-0-15\"}, {\"month_name\": \"Квітень\", \"id\": 106, \"month_num\": 4, \"day_num\": 15, \"ref\": \"/board/2-1-0-16\"}, {\"month_name\": \"Квітень\", \"id\": 107, \"month_num\": 4, \"day_num\": 16, \"ref\": \"/board/2-1-0-17\"}, {\"month_name\": \"Квітень\", \"id\": 108, \"month_num\": 4, \"day_num\": 17, \"ref\": \"/board/2-1-0-18\"}, {\"month_name\": \"Квітень\", \"id\": 109, \"month_num\": 4, \"day_num\": 18, \"ref\": \"/board/2-1-0-19\"}, {\"month_name\": \"Квітень\", \"id\": 110, \"month_num\": 4, \"day_num\": 19, \"ref\": \"/board/2-1-0-20\"}, {\"month_name\": \"Квітень\", \"id\": 111, \"month_num\": 4, \"day_num\": 20, \"ref\": \"/board/2-1-0-21\"}, {\"month_name\": \"Квітень\", \"id\": 112, \"month_num\": 4, \"day_num\": 21, \"ref\": \"/board/2-1-0-22\"}, {\"month_name\": \"Квітень\", \"id\": 113, \"month_num\": 4, \"day_num\": 22, \"ref\": \"/board/2-1-0-23\"}, {\"month_name\": \"Квітень\", \"id\": 114, \"month_num\": 4, \"day_num\": 23, \"ref\": \"/board/2-1-0-24\"}, {\"month_name\": \"Квітень\", \"id\": 115, \"month_num\": 4, \"day_num\": 24, \"ref\": \"/board/2-1-0-25\"}, {\"month_name\": \"Квітень\", \"id\": 116, \"month_num\": 4, \"day_num\": 25, \"ref\": \"/board/2-1-0-26\"}, {\"month_name\": \"Квітень\", \"id\": 117, \"month_num\": 4, \"day_num\": 26, \"ref\": \"/board/2-1-0-27\"}, {\"month_name\": \"Квітень\", \"id\": 118, \"month_num\": 4, \"day_num\": 27, \"ref\": \"/board/2-1-0-28\"}, {\"month_name\": \"Квітень\", \"id\": 119, \"month_num\": 4, \"day_num\": 28, \"ref\": \"/board/2-1-0-29\"}, {\"month_name\": \"Квітень\", \"id\": 120, \"month_num\": 4, \"day_num\": 29, \"ref\": \"/board/2-1-0-30\"}, {\"month_name\": \"Квітень\", \"id\": 121, \"month_num\": 4, \"day_num\": 30, \"ref\": \"/board/2-1-0-31\"}, {\"month_name\": \"Травень\", \"id\": 122, \"month_num\": 5, \"day_num\": 1, \"ref\": \"/board/5-1-0-63\"}, {\"month_name\": \"Травень\", \"id\": 123, \"month_num\": 5, \"day_num\": 2, \"ref\": \"/board/5-1-0-64\"}, {\"month_name\": \"Травень\", \"id\": 124, \"month_num\": 5, \"day_num\": 3, \"ref\": \"/board/5-1-0-65\"}, {\"month_name\": \"Травень\", \"id\": 125, \"month_num\": 5, \"day_num\": 4, \"ref\": \"/board/5-1-0-66\"}, {\"month_name\": \"Травень\", \"id\": 126, \"month_num\": 5, \"day_num\": 5, \"ref\": \"/board/5-1-0-67\"}, {\"month_name\": \"Травень\", \"id\": 127, \"month_num\": 5, \"day_num\": 6, \"ref\": \"/board/5-1-0-68\"}, {\"month_name\": \"Травень\", \"id\": 128, \"month_num\": 5, \"day_num\": 7, \"ref\": \"/board/5-1-0-69\"}, {\"month_name\": \"Травень\", \"id\": 129, \"month_num\": 5, \"day_num\": 8, \"ref\": \"/board/5-1-0-70\"}, {\"month_name\": \"Травень\", \"id\": 130, \"month_num\": 5, \"day_num\": 9, \"ref\": \"/board/5-1-0-71\"}, {\"month_name\": \"Травень\", \"id\": 131, \"month_num\": 5, \"day_num\": 10, \"ref\": \"/board/5-1-0-72\"}, {\"month_name\": \"Травень\", \"id\": 132, \"month_num\": 5, \"day_num\": 11, \"ref\": \"/board/5-1-0-73\"}, {\"month_name\": \"Травень\", \"id\": 133, \"month_num\": 5, \"day_num\": 12, \"ref\": \"/board/5-1-0-74\"}, {\"month_name\": \"Травень\", \"id\": 134, \"month_num\": 5, \"day_num\": 13, \"ref\": \"/board/5-1-0-75\"}, {\"month_name\": \"Травень\", \"id\": 135, \"month_num\": 5, \"day_num\": 14, \"ref\": \"/board/5-1-0-76\"}, {\"month_name\": \"Травень\", \"id\": 136, \"month_num\": 5, \"day_num\": 15, \"ref\": \"/board/5-1-0-77\"}, {\"month_name\": \"Травень\", \"id\": 137, \"month_num\": 5, \"day_num\": 16, \"ref\": \"/board/5-1-0-78\"}, {\"month_name\": \"Травень\", \"id\": 138, \"month_num\": 5, \"day_num\": 17, \"ref\": \"/board/5-1-0-79\"}, {\"month_name\": \"Травень\", \"id\": 139, \"month_num\": 5, \"day_num\": 18, \"ref\": \"/board/5-1-0-80\"}, {\"month_name\": \"Травень\", \"id\": 140, \"month_num\": 5, \"day_num\": 19, \"ref\": \"/board/5-1-0-81\"}, {\"month_name\": \"Травень\", \"id\": 141, \"month_num\": 5, \"day_num\": 20, \"ref\": \"/board/5-1-0-82\"}, {\"month_name\": \"Травень\", \"id\": 142, \"month_num\": 5, \"day_num\": 21, \"ref\": \"/board/5-1-0-83\"}, {\"month_name\": \"Травень\", \"id\": 143, \"month_num\": 5, \"day_num\": 22, \"ref\": \"/board/5-1-0-84\"}, {\"month_name\": \"Травень\", \"id\": 144, \"month_num\": 5, \"day_num\": 23, \"ref\": \"/board/5-1-0-85\"}, {\"month_name\": \"Травень\", \"id\": 145, \"month_num\": 5, \"day_num\": 24, \"ref\": \"/board/5-1-0-86\"}, {\"month_name\": \"Травень\", \"id\": 146, \"month_num\": 5, \"day_num\": 25, \"ref\": \"/board/5-1-0-87\"}, {\"month_name\": \"Травень\", \"id\": 147, \"month_num\": 5, \"day_num\": 26, \"ref\": \"/board/5-1-0-88\"}, {\"month_name\": \"Травень\", \"id\": 148, \"month_num\": 5, \"day_num\": 27, \"ref\": \"/board/5-1-0-89\"}, {\"month_name\": \"Травень\", \"id\": 149, \"month_num\": 5, \"day_num\": 28, \"ref\": \"/board/5-1-0-90\"}, {\"month_name\": \"Травень\", \"id\": 150, \"month_num\": 5, \"day_num\": 29, \"ref\": \"/board/5-1-0-91\"}, {\"month_name\": \"Травень\", \"id\": 151, \"month_num\": 5, \"day_num\": 30, \"ref\": \"/board/5-1-0-92\"}, {\"month_name\": \"Травень\", \"id\": 152, \"month_num\": 5, \"day_num\": 31, \"ref\": \"/board/5-1-0-93\"}, {\"month_name\": \"Червень\", \"id\": 153, \"month_num\": 6, \"day_num\": 1, \"ref\": \"/board/6-1-0-94\"}, {\"month_name\": \"Червень\", \"id\": 154, \"month_num\": 6, \"day_num\": 2, \"ref\": \"/board/6-1-0-95\"}, {\"month_name\": \"Червень\", \"id\": 155, \"month_num\": 6, \"day_num\": 3, \"ref\": \"/board/6-1-0-96\"}, {\"month_name\": \"Червень\", \"id\": 156, \"month_num\": 6, \"day_num\": 4, \"ref\": \"/board/6-1-0-97\"}, {\"month_name\": \"Червень\", \"id\": 157, \"month_num\": 6, \"day_num\": 5, \"ref\": \"/board/6-1-0-98\"}, {\"month_name\": \"Червень\", \"id\": 158, \"month_num\": 6, \"day_num\": 6, \"ref\": \"/board/6-1-0-99\"}, {\"month_name\": \"Червень\", \"id\": 159, \"month_num\": 6, \"day_num\": 7, \"ref\": \"/board/6-1-0-100\"}, {\"month_name\": \"Червень\", \"id\": 160, \"month_num\": 6, \"day_num\": 8, \"ref\": \"/board/6-1-0-101\"}, {\"month_name\": \"Червень\", \"id\": 161, \"month_num\": 6, \"day_num\": 9, \"ref\": \"/board/6-1-0-102\"}, {\"month_name\": \"Червень\", \"id\": 162, \"month_num\": 6, \"day_num\": 10, \"ref\": \"/board/6-1-0-103\"}, {\"month_name\": \"Червень\", \"id\": 163, \"month_num\": 6, \"day_num\": 11, \"ref\": \"/board/6-1-0-104\"}, {\"month_name\": \"Червень\", \"id\": 164, \"month_num\": 6, \"day_num\": 12, \"ref\": \"/board/6-1-0-105\"}, {\"month_name\": \"Червень\", \"id\": 165, \"month_num\": 6, \"day_num\": 13, \"ref\": \"/board/6-1-0-106\"}, {\"month_name\": \"Червень\", \"id\": 166, \"month_num\": 6, \"day_num\": 14, \"ref\": \"/board/6-1-0-107\"}, {\"month_name\": \"Червень\", \"id\": 167, \"month_num\": 6, \"day_num\": 15, \"ref\": \"/board/6-1-0-108\"}, {\"month_name\": \"Червень\", \"id\": 168, \"month_num\": 6, \"day_num\": 16, \"ref\": \"/board/6-1-0-109\"}, {\"month_name\": \"Червень\", \"id\": 169, \"month_num\": 6, \"day_num\": 17, \"ref\": \"/board/6-1-0-110\"}, {\"month_name\": \"Червень\", \"id\": 170, \"month_num\": 6, \"day_num\": 18, \"ref\": \"/board/6-1-0-111\"}, {\"month_name\": \"Червень\", \"id\": 171, \"month_num\": 6, \"day_num\": 19, \"ref\": \"/board/6-1-0-112\"}, {\"month_name\": \"Червень\", \"id\": 172, \"month_num\": 6, \"day_num\": 20, \"ref\": \"/board/6-1-0-113\"}, {\"month_name\": \"Червень\", \"id\": 173, \"month_num\": 6, \"day_num\": 21, \"ref\": \"/board/6-1-0-114\"}, {\"month_name\": \"Червень\", \"id\": 174, \"month_num\": 6, \"day_num\": 22, \"ref\": \"/board/6-1-0-115\"}, {\"month_name\": \"Червень\", \"id\": 175, \"month_num\": 6, \"day_num\": 23, \"ref\": \"/board/6-1-0-116\"}, {\"month_name\": \"Червень\", \"id\": 176, \"month_num\": 6, \"day_num\": 24, \"ref\": \"/board/6-1-0-117\"}, {\"month_name\": \"Червень\", \"id\": 177, \"month_num\": 6, \"day_num\": 25, \"ref\": \"/board/6-1-0-118\"}, {\"month_name\": \"Червень\", \"id\": 178, \"month_num\": 6, \"day_num\": 26, \"ref\": \"/board/6-1-0-119\"}, {\"month_name\": \"Червень\", \"id\": 179, \"month_num\": 6, \"day_num\": 27, \"ref\": \"/board/6-1-0-120\"}, {\"month_name\": \"Червень\", \"id\": 180, \"month_num\": 6, \"day_num\": 28, \"ref\": \"/board/6-1-0-121\"}, {\"month_name\": \"Червень\", \"id\": 181, \"month_num\": 6, \"day_num\": 29, \"ref\": \"/board/6-1-0-122\"}, {\"month_name\": \"Червень\", \"id\": 182, \"month_num\": 6, \"day_num\": 30, \"ref\": \"/board/6-1-0-123\"}, {\"month_name\": \"Липень\", \"id\": 183, \"month_num\": 7, \"day_num\": 1, \"ref\": \"/board/7-1-0-124\"}, {\"month_name\": \"Липень\", \"id\": 184, \"month_num\": 7, \"day_num\": 2, \"ref\": \"/board/7-1-0-125\"}, {\"month_name\": \"Липень\", \"id\": 185, \"month_num\": 7, \"day_num\": 3, \"ref\": \"/board/7-1-0-126\"}, {\"month_name\": \"Липень\", \"id\": 186, \"month_num\": 7, \"day_num\": 4, \"ref\": \"/board/7-1-0-127\"}, {\"month_name\": \"Липень\", \"id\": 187, \"month_num\": 7, \"day_num\": 5, \"ref\": \"/board/7-1-0-128\"}, {\"month_name\": \"Липень\", \"id\": 188, \"month_num\": 7, \"day_num\": 6, \"ref\": \"/board/7-1-0-129\"}, {\"month_name\": \"Липень\", \"id\": 189, \"month_num\": 7, \"day_num\": 7, \"ref\": \"/board/7-1-0-130\"}, {\"month_name\": \"Липень\", \"id\": 190, \"month_num\": 7, \"day_num\": 8, \"ref\": \"/board/7-1-0-131\"}, {\"month_name\": \"Липень\", \"id\": 191, \"month_num\": 7, \"day_num\": 9, \"ref\": \"/board/7-1-0-132\"}, {\"month_name\": \"Липень\", \"id\": 192, \"month_num\": 7, \"day_num\": 10, \"ref\": \"/board/7-1-0-133\"}, {\"month_name\": \"Липень\", \"id\": 193, \"month_num\": 7, \"day_num\": 11, \"ref\": \"/board/7-1-0-134\"}, {\"month_name\": \"Липень\", \"id\": 194, \"month_num\": 7, \"day_num\": 12, \"ref\": \"/board/7-1-0-135\"}, {\"month_name\": \"Липень\", \"id\": 195, \"month_num\": 7, \"day_num\": 13, \"ref\": \"/board/7-1-0-136\"}, {\"month_name\": \"Липень\", \"id\": 196, \"month_num\": 7, \"day_num\": 14, \"ref\": \"/board/7-1-0-137\"}, {\"month_name\": \"Липень\", \"id\": 197, \"month_num\": 7, \"day_num\": 15, \"ref\": \"/board/7-1-0-138\"}, {\"month_name\": \"Липень\", \"id\": 198, \"month_num\": 7, \"day_num\": 16, \"ref\": \"/board/7-1-0-139\"}, {\"month_name\": \"Липень\", \"id\": 199, \"month_num\": 7, \"day_num\": 17, \"ref\": \"/board/7-1-0-140\"}, {\"month_name\": \"Липень\", \"id\": 200, \"month_num\": 7, \"day_num\": 18, \"ref\": \"/board/7-1-0-141\"}, {\"month_name\": \"Липень\", \"id\": 201, \"month_num\": 7, \"day_num\": 19, \"ref\": \"/board/7-1-0-142\"}, {\"month_name\": \"Липень\", \"id\": 202, \"month_num\": 7, \"day_num\": 20, \"ref\": \"/board/7-1-0-143\"}, {\"month_name\": \"Липень\", \"id\": 203, \"month_num\": 7, \"day_num\": 21, \"ref\": \"/board/7-1-0-144\"}, {\"month_name\": \"Липень\", \"id\": 204, \"month_num\": 7, \"day_num\": 22, \"ref\": \"/board/7-1-0-145\"}, {\"month_name\": \"Липень\", \"id\": 205, \"month_num\": 7, \"day_num\": 23, \"ref\": \"/board/7-1-0-146\"}, {\"month_name\": \"Липень\", \"id\": 206, \"month_num\": 7, \"day_num\": 24, \"ref\": \"/board/7-1-0-147\"}, {\"month_name\": \"Липень\", \"id\": 207, \"month_num\": 7, \"day_num\": 25, \"ref\": \"/board/7-1-0-148\"}, {\"month_name\": \"Липень\", \"id\": 208, \"month_num\": 7, \"day_num\": 26, \"ref\": \"/board/7-1-0-149\"}, {\"month_name\": \"Липень\", \"id\": 209, \"month_num\": 7, \"day_num\": 27, \"ref\": \"/board/7-1-0-150\"}, {\"month_name\": \"Липень\", \"id\": 210, \"month_num\": 7, \"day_num\": 28, \"ref\": \"/board/7-1-0-151\"}, {\"month_name\": \"Липень\", \"id\": 211, \"month_num\": 7, \"day_num\": 29, \"ref\": \"/board/7-1-0-152\"}, {\"month_name\": \"Липень\", \"id\": 212, \"month_num\": 7, \"day_num\": 30, \"ref\": \"/board/7-1-0-153\"}, {\"month_name\": \"Липень\", \"id\": 213, \"month_num\": 7, \"day_num\": 31, \"ref\": \"/board/7-1-0-154\"}, {\"month_name\": \"Серпень\", \"id\": 214, \"month_num\": 8, \"day_num\": 1, \"ref\": \"/board/8-1-0-155\"}, {\"month_name\": \"Серпень\", \"id\": 215, \"month_num\": 8, \"day_num\": 2, \"ref\": \"/board/8-1-0-156\"}, {\"month_name\": \"Серпень\", \"id\": 216, \"month_num\": 8, \"day_num\": 3, \"ref\": \"/board/8-1-0-157\"}, {\"month_name\": \"Серпень\", \"id\": 217, \"month_num\": 8, \"day_num\": 4, \"ref\": \"/board/8-1-0-158\"}, {\"month_name\": \"Серпень\", \"id\": 218, \"month_num\": 8, \"day_num\": 5, \"ref\": \"/board/8-1-0-159\"}, {\"month_name\": \"Серпень\", \"id\": 219, \"month_num\": 8, \"day_num\": 6, \"ref\": \"/board/8-1-0-160\"}, {\"month_name\": \"Серпень\", \"id\": 220, \"month_num\": 8, \"day_num\": 7, \"ref\": \"/board/8-1-0-161\"}, {\"month_name\": \"Серпень\", \"id\": 221, \"month_num\": 8, \"day_num\": 8, \"ref\": \"/board/8-1-0-162\"}, {\"month_name\": \"Серпень\", \"id\": 222, \"month_num\": 8, \"day_num\": 9, \"ref\": \"/board/8-1-0-163\"}, {\"month_name\": \"Серпень\", \"id\": 223, \"month_num\": 8, \"day_num\": 10, \"ref\": \"/board/8-1-0-164\"}, {\"month_name\": \"Серпень\", \"id\": 224, \"month_num\": 8, \"day_num\": 11, \"ref\": \"/board/8-1-0-165\"}, {\"month_name\": \"Серпень\", \"id\": 225, \"month_num\": 8, \"day_num\": 12, \"ref\": \"/board/8-1-0-166\"}, {\"month_name\": \"Серпень\", \"id\": 226, \"month_num\": 8, \"day_num\": 13, \"ref\": \"/board/8-1-0-167\"}, {\"month_name\": \"Серпень\", \"id\": 227, \"month_num\": 8, \"day_num\": 14, \"ref\": \"/board/8-1-0-168\"}, {\"month_name\": \"Серпень\", \"id\": 228, \"month_num\": 8, \"day_num\": 15, \"ref\": \"/board/8-1-0-169\"}, {\"month_name\": \"Серпень\", \"id\": 229, \"month_num\": 8, \"day_num\": 16, \"ref\": \"/board/8-1-0-170\"}, {\"month_name\": \"Серпень\", \"id\": 230, \"month_num\": 8, \"day_num\": 17, \"ref\": \"/board/8-1-0-171\"}, {\"month_name\": \"Серпень\", \"id\": 231, \"month_num\": 8, \"day_num\": 18, \"ref\": \"/board/8-1-0-172\"}, {\"month_name\": \"Серпень\", \"id\": 232, \"month_num\": 8, \"day_num\": 19, \"ref\": \"/board/8-1-0-173\"}, {\"month_name\": \"Серпень\", \"id\": 233, \"month_num\": 8, \"day_num\": 20, \"ref\": \"/board/8-1-0-174\"}, {\"month_name\": \"Серпень\", \"id\": 234, \"month_num\": 8, \"day_num\": 21, \"ref\": \"/board/8-1-0-175\"}, {\"month_name\": \"Серпень\", \"id\": 235, \"month_num\": 8, \"day_num\": 22, \"ref\": \"/board/8-1-0-176\"}, {\"month_name\": \"Серпень\", \"id\": 236, \"month_num\": 8, \"day_num\": 23, \"ref\": \"/board/8-1-0-177\"}, {\"month_name\": \"Серпень\", \"id\": 237, \"month_num\": 8, \"day_num\": 24, \"ref\": \"/board/8-1-0-178\"}, {\"month_name\": \"Серпень\", \"id\": 238, \"month_num\": 8, \"day_num\": 25, \"ref\": \"/board/8-1-0-179\"}, {\"month_name\": \"Серпень\", \"id\": 239, \"month_num\": 8, \"day_num\": 26, \"ref\": \"/board/8-1-0-180\"}, {\"month_name\": \"Серпень\", \"id\": 240, \"month_num\": 8, \"day_num\": 27, \"ref\": \"/board/8-1-0-181\"}, {\"month_name\": \"Серпень\", \"id\": 241, \"month_num\": 8, \"day_num\": 28, \"ref\": \"/board/8-1-0-182\"}, {\"month_name\": \"Серпень\", \"id\": 242, \"month_num\": 8, \"day_num\": 29, \"ref\": \"/board/8-1-0-183\"}, {\"month_name\": \"Серпень\", \"id\": 243, \"month_num\": 8, \"day_num\": 30, \"ref\": \"/board/8-1-0-184\"}, {\"month_name\": \"Серпень\", \"id\": 244, \"month_num\": 8, \"day_num\": 31, \"ref\": \"/board/8-1-0-185\"}, {\"month_name\": \"Вересень\", \"id\": 245, \"month_num\": 9, \"day_num\": 1, \"ref\": \"/board/9-1-0-276\"}, {\"month_name\": \"Вересень\", \"id\": 246, \"month_num\": 9, \"day_num\": 2, \"ref\": \"/board/9-1-0-277\"}, {\"month_name\": \"Вересень\", \"id\": 247, \"month_num\": 9, \"day_num\": 3, \"ref\": \"/board/9-1-0-278\"}, {\"month_name\": \"Вересень\", \"id\": 248, \"month_num\": 9, \"day_num\": 4, \"ref\": \"/board/9-1-0-279\"}, {\"month_name\": \"Вересень\", \"id\": 249, \"month_num\": 9, \"day_num\": 5, \"ref\": \"/board/9-1-0-280\"}, {\"month_name\": \"Вересень\", \"id\": 250, \"month_num\": 9, \"day_num\": 6, \"ref\": \"/board/9-1-0-281\"}, {\"month_name\": \"Вересень\", \"id\": 251, \"month_num\": 9, \"day_num\": 7, \"ref\": \"/board/9-1-0-282\"}, {\"month_name\": \"Вересень\", \"id\": 252, \"month_num\": 9, \"day_num\": 8, \"ref\": \"/board/9-1-0-283\"}, {\"month_name\": \"Вересень\", \"id\": 253, \"month_num\": 9, \"day_num\": 9, \"ref\": \"/board/9-1-0-284\"}, {\"month_name\": \"Вересень\", \"id\": 254, \"month_num\": 9, \"day_num\": 10, \"ref\": \"/board/9-1-0-285\"}, {\"month_name\": \"Вересень\", \"id\": 255, \"month_num\": 9, \"day_num\": 11, \"ref\": \"/board/9-1-0-286\"}, {\"month_name\": \"Вересень\", \"id\": 256, \"month_num\": 9, \"day_num\": 12, \"ref\": \"/board/9-1-0-287\"}, {\"month_name\": \"Вересень\", \"id\": 257, \"month_num\": 9, \"day_num\": 13, \"ref\": \"/board/9-1-0-288\"}, {\"month_name\": \"Вересень\", \"id\": 258, \"month_num\": 9, \"day_num\": 14, \"ref\": \"/board/9-1-0-289\"}, {\"month_name\": \"Вересень\", \"id\": 259, \"month_num\": 9, \"day_num\": 15, \"ref\": \"/board/9-1-0-290\"}, {\"month_name\": \"Вересень\", \"id\": 260, \"month_num\": 9, \"day_num\": 16, \"ref\": \"/board/9-1-0-291\"}, {\"month_name\": \"Вересень\", \"id\": 261, \"month_num\": 9, \"day_num\": 17, \"ref\": \"/board/9-1-0-292\"}, {\"month_name\": \"Вересень\", \"id\": 262, \"month_num\": 9, \"day_num\": 18, \"ref\": \"/board/9-1-0-293\"}, {\"month_name\": \"Вересень\", \"id\": 263, \"month_num\": 9, \"day_num\": 19, \"ref\": \"/board/9-1-0-294\"}, {\"month_name\": \"Вересень\", \"id\": 264, \"month_num\": 9, \"day_num\": 20, \"ref\": \"/board/9-1-0-295\"}, {\"month_name\": \"Вересень\", \"id\": 265, \"month_num\": 9, \"day_num\": 21, \"ref\": \"/board/9-1-0-296\"}, {\"month_name\": \"Вересень\", \"id\": 266, \"month_num\": 9, \"day_num\": 22, \"ref\": \"/board/9-1-0-297\"}, {\"month_name\": \"Вересень\", \"id\": 267, \"month_num\": 9, \"day_num\": 23, \"ref\": \"/board/9-1-0-298\"}, {\"month_name\": \"Вересень\", \"id\": 268, \"month_num\": 9, \"day_num\": 24, \"ref\": \"/board/9-1-0-299\"}, {\"month_name\": \"Вересень\", \"id\": 269, \"month_num\": 9, \"day_num\": 25, \"ref\": \"/board/9-1-0-300\"}, {\"month_name\": \"Вересень\", \"id\": 270, \"month_num\": 9, \"day_num\": 26, \"ref\": \"/board/9-1-0-301\"}, {\"month_name\": \"Вересень\", \"id\": 271, \"month_num\": 9, \"day_num\": 27, \"ref\": \"/board/9-1-0-302\"}, {\"month_name\": \"Вересень\", \"id\": 272, \"month_num\": 9, \"day_num\": 28, \"ref\": \"/board/9-1-0-303\"}, {\"month_name\": \"Вересень\", \"id\": 273, \"month_num\": 9, \"day_num\": 29, \"ref\": \"/board/9-1-0-304\"}, {\"month_name\": \"Вересень\", \"id\": 274, \"month_num\": 9, \"day_num\": 30, \"ref\": \"/board/9-1-0-305\"}, {\"month_name\": \"Жовтень\", \"id\": 275, \"month_num\": 10, \"day_num\": 1, \"ref\": \"/board/10-1-0-306\"}, {\"month_name\": \"Жовтень\", \"id\": 276, \"month_num\": 10, \"day_num\": 2, \"ref\": \"/board/10-1-0-307\"}, {\"month_name\": \"Жовтень\", \"id\": 277, \"month_num\": 10, \"day_num\": 3, \"ref\": \"/board/10-1-0-308\"}, {\"month_name\": \"Жовтень\", \"id\": 278, \"month_num\": 10, \"day_num\": 4, \"ref\": \"/board/10-1-0-309\"}, {\"month_name\": \"Жовтень\", \"id\": 279, \"month_num\": 10, \"day_num\": 5, \"ref\": \"/board/10-1-0-310\"}, {\"month_name\": \"Жовтень\", \"id\": 280, \"month_num\": 10, \"day_num\": 6, \"ref\": \"/board/10-1-0-311\"}, {\"month_name\": \"Жовтень\", \"id\": 281, \"month_num\": 10, \"day_num\": 7, \"ref\": \"/board/10-1-0-312\"}, {\"month_name\": \"Жовтень\", \"id\": 282, \"month_num\": 10, \"day_num\": 8, \"ref\": \"/board/10-1-0-313\"}, {\"month_name\": \"Жовтень\", \"id\": 283, \"month_num\": 10, \"day_num\": 9, \"ref\": \"/board/10-1-0-314\"}, {\"month_name\": \"Жовтень\", \"id\": 284, \"month_num\": 10, \"day_num\": 10, \"ref\": \"/board/10-1-0-315\"}, {\"month_name\": \"Жовтень\", \"id\": 285, \"month_num\": 10, \"day_num\": 11, \"ref\": \"/board/10-1-0-316\"}, {\"month_name\": \"Жовтень\", \"id\": 286, \"month_num\": 10, \"day_num\": 12, \"ref\": \"/board/10-1-0-317\"}, {\"month_name\": \"Жовтень\", \"id\": 287, \"month_num\": 10, \"day_num\": 13, \"ref\": \"/board/10-1-0-318\"}, {\"month_name\": \"Жовтень\", \"id\": 288, \"month_num\": 10, \"day_num\": 14, \"ref\": \"/board/10-1-0-319\"}, {\"month_name\": \"Жовтень\", \"id\": 289, \"month_num\": 10, \"day_num\": 15, \"ref\": \"/board/10-1-0-320\"}, {\"month_name\": \"Жовтень\", \"id\": 290, \"month_num\": 10, \"day_num\": 16, \"ref\": \"/board/10-1-0-321\"}, {\"month_name\": \"Жовтень\", \"id\": 291, \"month_num\": 10, \"day_num\": 17, \"ref\": \"/board/10-1-0-322\"}, {\"month_name\": \"Жовтень\", \"id\": 292, \"month_num\": 10, \"day_num\": 18, \"ref\": \"/board/10-1-0-323\"}, {\"month_name\": \"Жовтень\", \"id\": 293, \"month_num\": 10, \"day_num\": 19, \"ref\": \"/board/10-1-0-324\"}, {\"month_name\": \"Жовтень\", \"id\": 294, \"month_num\": 10, \"day_num\": 20, \"ref\": \"/board/10-1-0-325\"}, {\"month_name\": \"Жовтень\", \"id\": 295, \"month_num\": 10, \"day_num\": 21, \"ref\": \"/board/10-1-0-326\"}, {\"month_name\": \"Жовтень\", \"id\": 296, \"month_num\": 10, \"day_num\": 22, \"ref\": \"/board/10-1-0-327\"}, {\"month_name\": \"Жовтень\", \"id\": 297, \"month_num\": 10, \"day_num\": 23, \"ref\": \"/board/10-1-0-328\"}, {\"month_name\": \"Жовтень\", \"id\": 298, \"month_num\": 10, \"day_num\": 24, \"ref\": \"/board/10-1-0-329\"}, {\"month_name\": \"Жовтень\", \"id\": 299, \"month_num\": 10, \"day_num\": 25, \"ref\": \"/board/10-1-0-330\"}, {\"month_name\": \"Жовтень\", \"id\": 300, \"month_num\": 10, \"day_num\": 26, \"ref\": \"/board/10-1-0-331\"}, {\"month_name\": \"Жовтень\", \"id\": 301, \"month_num\": 10, \"day_num\": 27, \"ref\": \"/board/10-1-0-332\"}, {\"month_name\": \"Жовтень\", \"id\": 302, \"month_num\": 10, \"day_num\": 28, \"ref\": \"/board/10-1-0-333\"}, {\"month_name\": \"Жовтень\", \"id\": 303, \"month_num\": 10, \"day_num\": 29, \"ref\": \"/board/10-1-0-334\"}, {\"month_name\": \"Жовтень\", \"id\": 304, \"month_num\": 10, \"day_num\": 30, \"ref\": \"/board/10-1-0-335\"}, {\"month_name\": \"Жовтень\", \"id\": 305, \"month_num\": 10, \"day_num\": 31, \"ref\": \"/board/10-1-0-336\"}, {\"month_name\": \"Листопад\", \"id\": 306, \"month_num\": 11, \"day_num\": 1, \"ref\": \"/board/11-1-0-337\"}, {\"month_name\": \"Листопад\", \"id\": 307, \"month_num\": 11, \"day_num\": 2, \"ref\": \"/board/11-1-0-338\"}, {\"month_name\": \"Листопад\", \"id\": 308, \"month_num\": 11, \"day_num\": 3, \"ref\": \"/board/11-1-0-339\"}, {\"month_name\": \"Листопад\", \"id\": 309, \"month_num\": 11, \"day_num\": 4, \"ref\": \"/board/11-1-0-340\"}, {\"month_name\": \"Листопад\", \"id\": 310, \"month_num\": 11, \"day_num\": 5, \"ref\": \"/board/11-1-0-341\"}, {\"month_name\": \"Листопад\", \"id\": 311, \"month_num\": 11, \"day_num\": 6, \"ref\": \"/board/11-1-0-342\"}, {\"month_name\": \"Листопад\", \"id\": 312, \"month_num\": 11, \"day_num\": 7, \"ref\": \"/board/11-1-0-343\"}, {\"month_name\": \"Листопад\", \"id\": 313, \"month_num\": 11, \"day_num\": 8, \"ref\": \"/board/11-1-0-344\"}, {\"month_name\": \"Листопад\", \"id\": 314, \"month_num\": 11, \"day_num\": 9, \"ref\": \"/board/11-1-0-345\"}, {\"month_name\": \"Листопад\", \"id\": 315, \"month_num\": 11, \"day_num\": 10, \"ref\": \"/board/11-1-0-346\"}, {\"month_name\": \"Листопад\", \"id\": 316, \"month_num\": 11, \"day_num\": 11, \"ref\": \"/board/11-1-0-347\"}, {\"month_name\": \"Листопад\", \"id\": 317, \"month_num\": 11, \"day_num\": 12, \"ref\": \"/board/11-1-0-348\"}, {\"month_name\": \"Листопад\", \"id\": 318, \"month_num\": 11, \"day_num\": 13, \"ref\": \"/board/11-1-0-349\"}, {\"month_name\": \"Листопад\", \"id\": 319, \"month_num\": 11, \"day_num\": 14, \"ref\": \"/board/11-1-0-350\"}, {\"month_name\": \"Листопад\", \"id\": 320, \"month_num\": 11, \"day_num\": 15, \"ref\": \"/board/11-1-0-351\"}, {\"month_name\": \"Листопад\", \"id\": 321, \"month_num\": 11, \"day_num\": 16, \"ref\": \"/board/11-1-0-352\"}, {\"month_name\": \"Листопад\", \"id\": 322, \"month_num\": 11, \"day_num\": 17, \"ref\": \"/board/11-1-0-353\"}, {\"month_name\": \"Листопад\", \"id\": 323, \"month_num\": 11, \"day_num\": 18, \"ref\": \"/board/11-1-0-354\"}, {\"month_name\": \"Листопад\", \"id\": 324, \"month_num\": 11, \"day_num\": 19, \"ref\": \"/board/11-1-0-355\"}, {\"month_name\": \"Листопад\", \"id\": 325, \"month_num\": 11, \"day_num\": 20, \"ref\": \"/board/11-1-0-356\"}, {\"month_name\": \"Листопад\", \"id\": 326, \"month_num\": 11, \"day_num\": 21, \"ref\": \"/board/11-1-0-357\"}, {\"month_name\": \"Листопад\", \"id\": 327, \"month_num\": 11, \"day_num\": 22, \"ref\": \"/board/11-1-0-358\"}, {\"month_name\": \"Листопад\", \"id\": 328, \"month_num\": 11, \"day_num\": 23, \"ref\": \"/board/11-1-0-359\"}, {\"month_name\": \"Листопад\", \"id\": 329, \"month_num\": 11, \"day_num\": 24, \"ref\": \"/board/11-1-0-360\"}, {\"month_name\": \"Листопад\", \"id\": 330, \"month_num\": 11, \"day_num\": 25, \"ref\": \"/board/11-1-0-361\"}, {\"month_name\": \"Листопад\", \"id\": 331, \"month_num\": 11, \"day_num\": 26, \"ref\": \"/board/11-1-0-362\"}, {\"month_name\": \"Листопад\", \"id\": 332, \"month_num\": 11, \"day_num\": 27, \"ref\": \"/board/11-1-0-363\"}, {\"month_name\": \"Листопад\", \"id\": 333, \"month_num\": 11, \"day_num\": 28, \"ref\": \"/board/11-1-0-364\"}, {\"month_name\": \"Листопад\", \"id\": 334, \"month_num\": 11, \"day_num\": 29, \"ref\": \"/board/11-1-0-365\"}, {\"month_name\": \"Листопад\", \"id\": 335, \"month_num\": 11, \"day_num\": 30, \"ref\": \"/board/11-1-0-366\"}, {\"month_name\": \"Грудень\", \"id\": 336, \"month_num\": 12, \"day_num\": 1, \"ref\": \"/board/12-1-0-245\"}, {\"month_name\": \"Грудень\", \"id\": 337, \"month_num\": 12, \"day_num\": 2, \"ref\": \"/board/12-1-0-246\"}, {\"month_name\": \"Грудень\", \"id\": 338, \"month_num\": 12, \"day_num\": 3, \"ref\": \"/board/12-1-0-247\"}, {\"month_name\": \"Грудень\", \"id\": 339, \"month_num\": 12, \"day_num\": 4, \"ref\": \"/board/12-1-0-248\"}, {\"month_name\": \"Грудень\", \"id\": 340, \"month_num\": 12, \"day_num\": 5, \"ref\": \"/board/12-1-0-249\"}, {\"month_name\": \"Грудень\", \"id\": 341, \"month_num\": 12, \"day_num\": 6, \"ref\": \"/board/12-1-0-250\"}, {\"month_name\": \"Грудень\", \"id\": 342, \"month_num\": 12, \"day_num\": 7, \"ref\": \"/board/12-1-0-251\"}, {\"month_name\": \"Грудень\", \"id\": 343, \"month_num\": 12, \"day_num\": 8, \"ref\": \"/board/12-1-0-252\"}, {\"month_name\": \"Грудень\", \"id\": 344, \"month_num\": 12, \"day_num\": 9, \"ref\": \"/board/12-1-0-253\"}, {\"month_name\": \"Грудень\", \"id\": 345, \"month_num\": 12, \"day_num\": 10, \"ref\": \"/board/12-1-0-254\"}, {\"month_name\": \"Грудень\", \"id\": 346, \"month_num\": 12, \"day_num\": 11, \"ref\": \"/board/12-1-0-255\"}, {\"month_name\": \"Грудень\", \"id\": 347, \"month_num\": 12, \"day_num\": 12, \"ref\": \"/board/12-1-0-256\"}, {\"month_name\": \"Грудень\", \"id\": 348, \"month_num\": 12, \"day_num\": 13, \"ref\": \"/board/12-1-0-258\"}, {\"month_name\": \"Грудень\", \"id\": 349, \"month_num\": 12, \"day_num\": 14, \"ref\": \"/board/12-1-0-257\"}, {\"month_name\": \"Грудень\", \"id\": 350, \"month_num\": 12, \"day_num\": 15, \"ref\": \"/board/12-1-0-259\"}, {\"month_name\": \"Грудень\", \"id\": 351, \"month_num\": 12, \"day_num\": 16, \"ref\": \"/board/12-1-0-260\"}, {\"month_name\": \"Грудень\", \"id\": 352, \"month_num\": 12, \"day_num\": 17, \"ref\": \"/board/12-1-0-261\"}, {\"month_name\": \"Грудень\", \"id\": 353, \"month_num\": 12, \"day_num\": 18, \"ref\": \"/board/12-1-0-262\"}, {\"month_name\": \"Грудень\", \"id\": 354, \"month_num\": 12, \"day_num\": 19, \"ref\": \"/board/12-1-0-263\"}, {\"month_name\": \"Грудень\", \"id\": 355, \"month_num\": 12, \"day_num\": 20, \"ref\": \"/board/12-1-0-264\"}, {\"month_name\": \"Грудень\", \"id\": 356, \"month_num\": 12, \"day_num\": 21, \"ref\": \"/board/12-1-0-265\"}, {\"month_name\": \"Грудень\", \"id\": 357, \"month_num\": 12, \"day_num\": 22, \"ref\": \"/board/12-1-0-266\"}, {\"month_name\": \"Грудень\", \"id\": 358, \"month_num\": 12, \"day_num\": 23, \"ref\": \"/board/12-1-0-267\"}, {\"month_name\": \"Грудень\", \"id\": 359, \"month_num\": 12, \"day_num\": 24, \"ref\": \"/board/12-1-0-268\"}, {\"month_name\": \"Грудень\", \"id\": 360, \"month_num\": 12, \"day_num\": 25, \"ref\": \"/board/12-1-0-269\"}, {\"month_name\": \"Грудень\", \"id\": 361, \"month_num\": 12, \"day_num\": 26, \"ref\": \"/board/12-1-0-270\"}, {\"month_name\": \"Грудень\", \"id\": 362, \"month_num\": 12, \"day_num\": 27, \"ref\": \"/board/12-1-0-271\"}, {\"month_name\": \"Грудень\", \"id\": 363, \"month_num\": 12, \"day_num\": 28, \"ref\": \"/board/12-1-0-272\"}, {\"month_name\": \"Грудень\", \"id\": 364, \"month_num\": 12, \"day_num\": 29, \"ref\": \"/board/12-1-0-273\"}, {\"month_name\": \"Грудень\", \"id\": 365, \"month_num\": 12, \"day_num\": 30, \"ref\": \"/board/12-1-0-274\"}, {\"month_name\": \"Грудень\", \"id\": 366, \"month_num\": 12, \"day_num\": 31, \"ref\": \"/board/12-1-0-275\"}]",
+			":\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"infinitesimal"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".",
+							"bracket_highlighter.busy": false,
+							"default_dir": "C:\\Users\\pusti\\OneDrive\\Kpi progects\\диплом\\прога",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hmm.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
