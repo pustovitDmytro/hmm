@@ -4,8 +4,12 @@
 		"selected_items":
 		[
 			[
+				"B",
+				"Baum_Welch"
+			],
+			[
 				"o",
-				"ones\t(1_ачр.py)"
+				"obs"
 			],
 			[
 				"ma",
@@ -200,10 +204,13 @@
 	"buffers":
 	[
 		{
+			"contents": "# -*- encoding: utf-8 -*-\nimport numpy\nfrom abc import ABCMeta, abstractmethod\ndef main():\n\tN=10\n\tobs = numpy.random.binomial(1,0.3,N)\n\tmodel = HMM(2,N,obs)\n\tmodel.Forward()\n\tmodel.BackWard()\n\tmodel.Baum_Welch()\n\tmodel.show()\n\nclass MM():\n\t__metaclass__ = ABCMeta\n\tdef __init__(self, n,t):\n          \t\tself._N = n\n          \t\tself._T = t\n          \t\tself._A = [[1./n for i in range(self._N)]for j in range(self._N)]\nclass HMM(MM):\n\tdef __init__(self, n , t, ob):\n\t\tsuper(HMM,self).__init__(n,t)\n\t\tself._B = [[1./n for i in range(self._N)]for t in range(self._T)]\n\t\tself._obs = ob       \n\t\n\tdef show(self): \n\t\tprint('A:\\n',self._A)\n\t\tprint('B:\\n',self._B)\n\t\n\tdef Forward(self):\n\t\talfa = [[0.5 if j==0 else 0 for i in range(self._N)] for j in range(self._T)]\n\t\tfor t in range(1,self._T):\n\t\t\tfor i in range(self._N):\n\t\t\t\tfor j in range(self._N):\n\t\t\t\t\talfa[t][i]+=alfa[t-1][j]*self._A[i][j]*self._B[t][j]\n\t\tself.alfa = alfa\n\n\tdef BackWard(self):\n\t\tbeta = [[1 if j==self._T-1 else 0 for i in range(self._N)] for j in range(self._T)]\n\t\tfor t in range(self._T-1,0,-1):\n\t\t\tfor i in range(self._N):\n\t\t\t\tfor j in range(self._N):\n\t\t\t\t\tbeta[t-1][i]+=beta[t][j]*self._A[i][j]*self._B[t][j]\n\t\tself.beta = beta;\n\n\tdef Baum_Welch(self):\n\t\tv = [1,0]\n\t\tgama = [[[self.beta[t+1][j]*self._A[i][j]*self._B[t][j]*self.alfa[t][i]for i in range(self._N)] for j in range(self._N)] for t in range(self._T)] \n\t\tA = self._A\n\t\tB = self._B\n\t\tfor i in range(self._N):\n\t\t\tfor j in range(self._N):\n\t\t\t\ts = 0\n\t\t\t\tSum = 0;\n\t\t\t\tfor t in range(self._T):\n\t\t\t\t\ts+=gama[i][j][t]\n\t\t\t\tfor i1,t1 in zip(range(self._N),range(self._T)):\n\t\t\t\t\tSum+=gama[i1][j][t1]\n\t\t\t\tA[i][j] = s/Sum;\n\n\t\tfor j in range(self._N):\n\t\t\tfor t in range(self._T):\n\t\t\t\tfor i1,t1 in zip(range(self._N),range(self._T)):\n\t\t\t\t\tSum+=gama[i1][j][t1]\n\t\t\t\tfor i1,t1 in zip(range(self._N),range(self._T)):\n\t\t\t\t\tif self._obs[t1]==v[j] Sum+=gama[i1][j][t1]\n\n\n\n\nif __name__ == '__main__':\n\tmain()",
 			"file": "hmm.py",
+			"file_size": 1978,
+			"file_write_time": 131321013179614646,
 			"settings":
 			{
-				"buffer_size": 546,
+				"buffer_size": 1914,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -489,15 +496,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 546,
+						"buffer_size": 1914,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								464,
-								464
+								1853,
+								1853
 							]
 						],
 						"settings":
@@ -508,12 +515,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										1853,
+										1854
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										1851,
+										1852
+									]
 								},
 								"unmatched":
 								{
@@ -521,21 +543,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -546,41 +578,31 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 405.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -599,8 +621,8 @@
 						"selection":
 						[
 							[
-								2143,
-								2143
+								181,
+								181
 							]
 						],
 						"settings":
@@ -610,12 +632,27 @@
 							{
 								"close":
 								{
+									"1":
+									[
+										183,
+										184
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/round_bracket.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										181,
+										182
+									]
 								},
 								"unmatched":
 								{
@@ -623,21 +660,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -648,43 +695,33 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 990.0,
+						"translation.y": 75.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
