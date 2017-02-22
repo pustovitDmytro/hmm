@@ -42,7 +42,7 @@ class HMM(MM):
 		for t in range(self.T-1,0,-1):
 			for i in range(self.N):
 				for j in range(self.N):
-					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[self.obs[t]][j]
+					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[j][self.obs[t]]
 		self.beta = beta;
 
 	def Baum_Welch(self):
