@@ -3,21 +3,26 @@ import numpy
 from abc import ABCMeta, abstractmethod
 def main():
 	N=100
-	obs = numpy.random.binomial(1,0.3,N)
+	#obs = numpy.random.binomial(1,0.3,N)
+	obs = [0,1,1,0]
 	model = HMM(2,2,obs)
 	model.Baum_Welch()
+	#model.Baum_Welch()
 
 class MM():
 	__metaclass__ = ABCMeta
 	def __init__(self,n,t):
           		self.N = n
           		self.T = t
-          		self.A = [[1./n for i in range(self.N)]for j in range(self.N)]
+          		self.A = [[.3,.7],[.1,.9]]
+          		self.Pi = [.85,.15]
+          		#self.A = [[1./n for i in range(self.N)]for j in range(self.N)]
 class HMM(MM):
 	def __init__(self, n , l, ob):
 		super(HMM,self).__init__(n,len(ob))
 		self.L = l
-		self.B = [[1./n for i in range(self.N)]for t in range(self.L)]
+		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]
+		self.B = [[.4,.6],[.5,.5]]
 		self.obs = ob       
 	
 	def show(self): 
@@ -25,11 +30,11 @@ class HMM(MM):
 		print('B:\n',self.B)
 
 	def Forward(self):
-		alfa = [[0.5 if j==0 else 0 for i in range(self.N)] for j in range(self.T)]
+		alfa = [[self.Pi[i]*self.B[i][self.obs[0]] if j==0 else 0 for i in range(self.N)] for j in range(self.T)]
 		for t in range(1,self.T):
 			for i in range(self.N):
 				for j in range(self.N):
-					alfa[t][i]+=alfa[t-1][j]*self.A[i][j]*self.B[self.obs[t]][j]
+					alfa[t][i]+=alfa[t-1][j]*self.A[j][i]*self.B[j][self.obs[t]]
 		self.alfa = alfa
 
 	def BackWard(self):
@@ -41,9 +46,12 @@ class HMM(MM):
 		self.beta = beta;
 
 	def Baum_Welch(self):
-		for iter in range(100):
+		for iter in range(2):
+			self.show()
 			self.Forward()
 			self.BackWard()
+			print("alfa: ",self.alfa)
+			print("beta: ",self.beta)
 			ksi = [[[self.beta[t+1][j]*self.A[i][j]*self.B[self.obs[t+1]][j]*self.alfa[t][i] for i in range(self.N)] for j in range(self.N)] for t in range(self.T-1)]
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
 			for t in range(self.T):
