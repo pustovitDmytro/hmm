@@ -5,13 +5,11 @@ def main():
 	N=100
 	obs = numpy.random.binomial(1,0.3,N)
 	model = HMM(2,2,obs)
-	model.show()
 	model.Baum_Welch()
-	model.show()
 
 class MM():
 	__metaclass__ = ABCMeta
-	def __init__(self, n,t):
+	def __init__(self,n,t):
           		self.N = n
           		self.T = t
           		self.A = [[1./n for i in range(self.N)]for j in range(self.N)]
