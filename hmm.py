@@ -26,6 +26,7 @@ class HMM(MM):
 		self.obs = ob       
 	
 	def show(self): 
+		print('PI:\n',self.Pi)
 		print('A:\n',self.A)
 		print('B:\n',self.B)
 
@@ -47,12 +48,13 @@ class HMM(MM):
 
 	def Baum_Welch(self):
 		for iter in range(2):
+			print("Iteration",iter)
 			self.show()
 			self.Forward()
 			self.BackWard()
 			print("alfa: ",self.alfa)
 			print("beta: ",self.beta)
-			ksi = [[[self.beta[t+1][j]*self.A[i][j]*self.B[self.obs[t+1]][j]*self.alfa[t][i] for i in range(self.N)] for j in range(self.N)] for t in range(self.T-1)]
+			ksi = [[[self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i] for j in range(self.N)] for i in range(self.N)] for t in range(self.T-1)]
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
 			for t in range(self.T):
 				s1=0
@@ -61,18 +63,22 @@ class HMM(MM):
 				for i in range(self.N):
 					gama[t][i] = gama[t][i]/s1
 			for t in range(self.T-1):
-					s2=0
-					for i,j in zip(range(self.N),range(self.N)):
-						s2+=self.beta[t+1][j]*self.A[i][j]*self.B[self.obs[t+1]][j]*self.alfa[t][i]
-					for i,j in zip(range(self.N),range(self.N)):
-						ksi[t][j][i] = ksi[t][j][i]/s2
+				s2=0
+				for i,j in zip(range(self.N),range(self.N)):
+					s2+=self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i]
+				for i,j in zip(range(self.N),range(self.N)):
+					ksi[t][i][j] = ksi[t][i][j]/s2
+			print("gama:\n",gama)
+			print("ksi\n",ksi)
+			for i in range(self.N):
+				self.Pi[i] = gama[0][i];
 			for i in range(self.N):
 				for j in range(self.N):
 					s1 = 0
 					s2 = 0
 					for t in range(self.T-1):
 						s1+=gama[t][i]
-						s2+=ksi[t][j][i]
+						s2+=ksi[t][i][j]
 					self.A[i][j] = s2/s1
 	
 			for j in range(self.N):
@@ -83,9 +89,6 @@ class HMM(MM):
 						s1+=gama[t][j]
 						if (self.obs[t] == k): s2+=gama[t][j]
 					self.B[j][k] = s2/s1
-
-			print("Iteration",iter)
-			self.show()
 
 if __name__ == '__main__':
 	main()
