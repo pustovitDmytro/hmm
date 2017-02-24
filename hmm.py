@@ -55,20 +55,23 @@ class HMM(MM):
 			self.BackWard()
 			#print("alfa: ",self.alfa)
 			#print("beta: ",self.beta)
-			ksi = [[[self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i] for j in range(self.N)] for i in range(self.N)] for t in range(self.T-1)]
+			ksi = [[[self.beta[t][j]*self.A[i][j]*self.B[j][self.obs[t]]*self.alfa[t-1][i] for j in range(self.N)] for i in range(self.N)] for t in range(1,self.T)]
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
+			POL = 0;
+			for i in range(self.N):
+				POL+=self.alfa[self.T-1][i]
 			for t in range(self.T):
-				s1=0
-				for j in range(self.N):
-					s1+=self.beta[t][j]*self.alfa[t][j]
+			#	s1=0
+			#	for j in range(self.N):
+			#		s1+=self.beta[t][j]*self.alfa[t][j]
 				for i in range(self.N):
-					gama[t][i] = gama[t][i]/s1
+					gama[t][i] = gama[t][i]/POL
 			for t in range(self.T-1):
-				s2=0
+			#	s2=0
+			#	for i,j in zip(range(self.N),range(self.N)):
+			#		s2+=self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i]
 				for i,j in zip(range(self.N),range(self.N)):
-					s2+=self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i]
-				for i,j in zip(range(self.N),range(self.N)):
-					ksi[t][i][j] = ksi[t][i][j]/s2
+					ksi[t][i][j] = ksi[t][i][j]/POL
 			#print("gama:\n",gama)
 			#print("ksi\n",ksi)
 			for i in range(self.N):
@@ -77,7 +80,7 @@ class HMM(MM):
 				for j in range(self.N):
 					s1 = 0
 					s2 = 0
-					for t in range(self.T-1):
+					for t in range(1,self.T-1):
 						s1+=gama[t][i]
 						s2+=ksi[t][i][j]
 					self.A[i][j] = s2/s1
