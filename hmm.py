@@ -3,8 +3,9 @@ import numpy
 from abc import ABCMeta, abstractmethod
 def main():
 	N=100
-	#obs = numpy.random.binomial(1,0.3,N)
-	obs = [0,1,1,0]
+	obs = numpy.random.binomial(1,0.3,N)
+	print(sum(obs))
+	#obs = [0,1,1,0]
 	model = HMM(2,2,obs)
 	model.Baum_Welch()
 	#model.Baum_Welch()
@@ -22,7 +23,7 @@ class HMM(MM):
 		super(HMM,self).__init__(n,len(ob))
 		self.L = l
 		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]
-		self.B = [[.4,.6],[.5,.5]]
+		self.B = [[0.4,0.6],[0.5,0.5]]
 		self.obs = ob       
 	
 	def show(self): 
@@ -47,13 +48,13 @@ class HMM(MM):
 		self.beta = beta;
 
 	def Baum_Welch(self):
-		for iter in range(2):
+		for iter in range(10):
 			print("Iteration",iter)
 			self.show()
 			self.Forward()
 			self.BackWard()
-			print("alfa: ",self.alfa)
-			print("beta: ",self.beta)
+			#print("alfa: ",self.alfa)
+			#print("beta: ",self.beta)
 			ksi = [[[self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i] for j in range(self.N)] for i in range(self.N)] for t in range(self.T-1)]
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
 			for t in range(self.T):
@@ -68,8 +69,8 @@ class HMM(MM):
 					s2+=self.beta[t+1][j]*self.A[i][j]*self.B[j][self.obs[t+1]]*self.alfa[t][i]
 				for i,j in zip(range(self.N),range(self.N)):
 					ksi[t][i][j] = ksi[t][i][j]/s2
-			print("gama:\n",gama)
-			print("ksi\n",ksi)
+			#print("gama:\n",gama)
+			#print("ksi\n",ksi)
 			for i in range(self.N):
 				self.Pi[i] = gama[0][i];
 			for i in range(self.N):
