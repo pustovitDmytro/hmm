@@ -2,14 +2,13 @@
 import numpy
 from abc import ABCMeta, abstractmethod
 def main():
-	#N=10
-	#obs = numpy.random.binomial(1,0.3,N)
+	N=100
+	obs = numpy.random.binomial(1,0.3,N)
 	
-	obs = [2,0,0,2,1,2,1,1,1,2,1,1,1,1,1,2,2,0,0,1]
+	#obs = [2,0,0,2,1,2,1,1,1,2,1,1,1,1,1,2,2,0,0,1]
 	
-	model = HMM(2,3,obs)
+	model = HMM(2,2,obs)
 	model.Baum_Welch()
-	#model.Baum_Welch()
 
 class MM():
 	__metaclass__ = ABCMeta
@@ -24,7 +23,7 @@ class HMM(MM):
 		super(HMM,self).__init__(n,len(ob))
 		self.L = l
 		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]
-		self.B = [[.4,.1,.5],[0.1,.5,.4]]
+		self.B = [[.9,.1],[0.1,.9]]
 		self.obs = ob       
 	
 	def show(self): 
