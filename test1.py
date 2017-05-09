@@ -1,4 +1,4 @@
-N=500
+N=100
 obs = numpy.random.binomial(1,0.2,N)
 print(sum(obs)/500)
 A = [[.3,.7],[.6,.4]]

@@ -1,30 +1,55 @@
+# -*- encoding: utf-8 -*-
 import numpy
 from abc import ABCMeta, abstractmethod
 def main():
-
-def fromFile(name):
-	f = open(name)
-	A = f.readline().split('\t')
-	a = []
-	for i in A:
-		a.append(float(i))
-	return a
+	N=100
+	obs = numpy.random.binomial(1,0.35,N)
+	print(obs)
+	#obs = [2,0,0,2,1,2,1,1,1,2,1,1,1,1,1,2,2,0,0,1]
+	model = HMM(2,2,obs)
+	model.Baum_Welch()
+	print(sum(obs)/N)
+	model.show()
+	smodel = MM(2,obs)
+	smodel.find_probs()
+	smodel.show()
 
 class MM():
 	__metaclass__ = ABCMeta
-	def __init__(self,n,a,pi):
-          		self.N = n		
-          		self.A = a
-          		self.Pi = pi
-class HMM(MM):
-	def __init__(self, n , l, ob, a, pi, b):
-		super(HMM,self).__init__(n,a,pi)
-		self.L = l
-		self.B = b
+	def __init__(self,n,ob):
+		self.N = n
 		self.T = len(ob)
-		self.obs = ob       
+		self.obs = ob
+		self.A = [[1./self.N for i in range(self.N)] for j in range(self.N)]
+		self.Pi = [1./self.N for i in range(self.N)]
+	def instate(self,obs):
+		if (obs==1):
+			return 1
+		return 0
+	def find_probs(self):
+		for i in range(self.N):
+			for j in range(self.N):
+				s1=s2=0
+				for t in range(self.T-1):
+					if ((self.instate(self.obs[t])==i)&(self.instate(self.obs[t+1])==j)):
+						s1+=1
+					if (self.instate(self.obs[t])==i):
+						s2+=1	
+				self.A[i][j] = s1/s2
+	def show(self):
+		print("Simple markov model:")
+		print('A:\n',self.A)
+		print('Pi:\n',self.Pi)
+        		
+class HMM(MM):
+	def __init__(self, n , l, ob):
+		super(HMM,self).__init__(n,ob)
+		self.L = l
+		self.B = [[.9,.1],[.2,.8]]
+		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]		       
 	
-	def show(self): 
+	def show(self):
+		print("hidden markov model:") 
 		print('PI:\n',self.Pi)
 		print('A:\n',self.A)
 		print('B:\n',self.B)
@@ -45,8 +70,15 @@ class HMM(MM):
 					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[j][self.obs[t]]
 		self.beta = beta;
 
+	def perevirka(self,ksi,gama):
+		print("perevirka:")
+		for t in range(self.T-1):
+			print("t",t)
+			print("gama = ", gama[t])
+			print("ksi ",ksi[t])
+			
 	def Baum_Welch(self):
-		for iter in range(500):
+		for iter in range(200):
 			self.Forward()
 			self.BackWard()
 			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[s][self.obs[t+1]]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
@@ -73,7 +105,7 @@ class HMM(MM):
 				for q in range(self.N):
 					for s in range(self.N):
 						ksi[t][q][s] = ksi[t][q][s]/s2
-						
+				
 			for i in range(self.N):
 				self.Pi[i] = gama[0][i];
 			for i in range(self.N):			
