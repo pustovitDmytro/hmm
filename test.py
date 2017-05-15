@@ -48,7 +48,7 @@ def main():
 	first_model=hmm.MM(5,y,standart_instate)
 	first_model.find_probs()
 	first_model.show()
-	second_model=hmm.HMM(5,5,y,standart_instate,standart_instate)
+	second_model=hmm.SHMM(5,5,y,standart_instate,standart_instate)
 	second_model.Baum_Welch()
 	second_model.show()
 
