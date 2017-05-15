@@ -45,7 +45,7 @@ class HMM(MM):
 	def __init__(self, n , l, ob):
 		super(HMM,self).__init__(n,ob)
 		self.L = l
-		self.B = [[.9,.1],[.2,.8]]
+		self.B = [[.9,.1],[.1,.9]]
 		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]		       
 	
 	def show(self):
