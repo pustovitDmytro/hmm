@@ -1,39 +1,41 @@
 # -*- encoding: utf-8 -*-
 import numpy
+import statistics
 from abc import ABCMeta, abstractmethod
+def binom_instate(self,obs):
+		if (obs==1):
+			return 1
+		return 0
 def main():
 	N=100
 	obs = numpy.random.binomial(1,0.35,N)
-	print(obs)
-	#obs = [2,0,0,2,1,2,1,1,1,2,1,1,1,1,1,2,2,0,0,1]
-	model = HMM(2,2,obs)
-	model.Baum_Welch()
-	print(sum(obs)/N)
+	model = HMM(2,2,obs,binom_instate,binom_instate)
 	model.show()
-	smodel = MM(2,obs)
+	model.Baum_Welch()
+	model.show()
+	smodel = MM(2,obs,binom_instate)
 	smodel.find_probs()
 	smodel.show()
 
 class MM():
 	__metaclass__ = ABCMeta
-	def __init__(self,n,ob):
+	def __init__(self,n,ob,func):
 		self.N = n
 		self.T = len(ob)
 		self.obs = ob
 		self.A = [[1./self.N for i in range(self.N)] for j in range(self.N)]
 		self.Pi = [1./self.N for i in range(self.N)]
-	def instate(self,obs):
-		if (obs==1):
-			return 1
-		return 0
+		self.instate = func
+		self.mean = statistics.mean(self.obs)
+		self.stdev = statistics.stdev(self.obs)
 	def find_probs(self):
 		for i in range(self.N):
 			for j in range(self.N):
 				s1=s2=0
 				for t in range(self.T-1):
-					if ((self.instate(self.obs[t])==i)&(self.instate(self.obs[t+1])==j)):
+					if (((self.instate(self,self.obs[t]))==i)&((self.instate(self,self.obs[t+1]))==j)):
 						s1+=1
-					if (self.instate(self.obs[t])==i):
+					if (self.instate(self,self.obs[t]))==i:
 						s2+=1	
 				self.A[i][j] = s1/s2
 	def show(self):
@@ -42,12 +44,17 @@ class MM():
 		print('Pi:\n',self.Pi)
         		
 class HMM(MM):
-	def __init__(self, n , l, ob):
-		super(HMM,self).__init__(n,ob)
+	def __init__(self, n , l, ob,funcA,funcB):
+		super(HMM,self).__init__(n,ob,funcA)
 		self.L = l
-		self.B = [[.9,.1],[.1,.9]]
-		#self.B = [[1./n for i in range(self.N)]for t in range(self.L)]		       
-	
+		self.B = [[ self.initB(i,j) for i in range(self.N)]for j in range(self.L)]
+		self.obsTo=funcB		       
+	def initB(self,i,j):
+		if i==j:
+			return .8
+		else:
+			return .2/(self.N-1)
+
 	def show(self):
 		print("hidden markov model:") 
 		print('PI:\n',self.Pi)
@@ -55,11 +62,11 @@ class HMM(MM):
 		print('B:\n',self.B)
 
 	def Forward(self):
-		alfa = [[self.Pi[i]*self.B[i][self.obs[0]] if t==0 else 0 for i in range(self.N)] for t in range(self.T)]
+		alfa = [[self.Pi[i]*self.B[i][self.obsTo(self,self.obs[0])] if t==0 else 0 for i in range(self.N)] for t in range(self.T)]
 		for t in range(1,self.T):
 			for i in range(self.N):
 				for j in range(self.N):
-					alfa[t][i]+=alfa[t-1][j]*self.A[j][i]*self.B[i][self.obs[t]]
+					alfa[t][i]+=alfa[t-1][j]*self.A[j][i]*self.B[i][self.obsTo(self,self.obs[t])]
 		self.alfa = alfa
 
 	def BackWard(self):
@@ -67,7 +74,7 @@ class HMM(MM):
 		for t in range(self.T-1,0,-1):
 			for i in range(self.N):
 				for j in range(self.N):
-					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[j][self.obs[t]]
+					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[j][self.obsTo(self,self.obs[t])]
 		self.beta = beta;
 
 	def perevirka(self,ksi,gama):
@@ -81,11 +88,11 @@ class HMM(MM):
 		for iter in range(200):
 			self.Forward()
 			self.BackWard()
-			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[s][self.obs[t+1]]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
+			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
 			for t in range(self.T-1):
 				for q in range(self.N):
 					for s in range(self.N):
-						ksi[t][q][s] = self.alfa[t][q]*self.A[q][s]*self.B[s][self.obs[t+1]]*self.beta[t+1][s]
+						ksi[t][q][s] = self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
 
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
 			pro = 0
@@ -101,7 +108,7 @@ class HMM(MM):
 				s2=0
 				for q in range(self.N):
 					for s in range(self.N):
-						s2+= self.alfa[t][q]*self.A[q][s]*self.B[s][self.obs[t+1]]*self.beta[t+1][s]
+						s2+= self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
 				for q in range(self.N):
 					for s in range(self.N):
 						ksi[t][q][s] = ksi[t][q][s]/s2
