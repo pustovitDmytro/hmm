@@ -31,7 +31,8 @@ def standart_instate(self,obs):
 def main():
 	N=365
 	x = range(N)
-	y = np.sin(list(map(lambda x: x/2,x)))+np.sin(list(map(lambda x: x/3,x)))+np.sin(list(map(lambda x: x/5,x)))+np.sin(list(map(lambda x: x/7,x)))
+	eps = np.random.binomial(2,0.3,N)
+	y = eps+np.sin(list(map(lambda x: x/2,x)))+np.sin(list(map(lambda x: x/3,x)))+np.sin(list(map(lambda x: x/5,x)))+np.sin(list(map(lambda x: x/7,x)))
 	mean = statistics.mean(y)
 	stdev = statistics.stdev(y)
 	crisis = list(map(lambda x: isCrisis(x,mean,stdev),y))
@@ -44,14 +45,16 @@ def main():
 			tmpy.append(y[item])
 			tmpx.append(item)
 		plt.fill_between(tmpx,min(y),max(y),alpha=0.3, color='red')
-	#plt.show()
+	
 	first_model=hmm.MM(5,y,standart_instate)
 	first_model.find_probs()
 	first_model.show()
+
 	second_model=hmm.SHMM(5,5,y,standart_instate,standart_instate)
 	second_model.Baum_Welch()
 	second_model.show()
-
+	second_model.Viterbi(5,y[50])
+	plt.show()
 
 
 if __name__ == '__main__':

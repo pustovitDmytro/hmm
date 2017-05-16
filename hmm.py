@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-import numpy
+import numpy as np
 import statistics
 from abc import ABCMeta, abstractmethod
 def binom_instate(self,obs):
@@ -8,7 +8,7 @@ def binom_instate(self,obs):
 		return 0
 def main():
 	N=100
-	obs = numpy.random.binomial(1,0.35,N)
+	obs = np.random.binomial(1,0.35,N)
 	model = HMM(2,2,obs,binom_instate,binom_instate)
 	model.Baum_Welch()
 	model.show()
@@ -18,6 +18,7 @@ def main():
 	tmodel = SHMM(2,2,obs,binom_instate,binom_instate)
 	tmodel.Baum_Welch()
 	tmodel.show()
+	tmodel.Viterbi(5,1)
 
 class MM():
 	__metaclass__ = ABCMeta
@@ -147,9 +148,9 @@ class SHMM(MM):
 		self.obsTo=funcB		       
 	def initB(self,i,j):
 		if i==j:
-			return .8
+			return .7
 		else:
-			return .2/(self.N-1)
+			return .3/(self.N-1)
 
 	def show(self):
 		print("hidden markov model:") 
@@ -188,14 +189,54 @@ class SHMM(MM):
 		self.BackWard()
 		self.beta =  [[self.Bbeta[t][i]/self.Pro[t] for i in range(self.N)] for t in range(self.T)]
 
+	def FindBest(self,i,t,d):
+		a = [ d[j][t-1]*self.A[j][i] for j in range(self.N)]
+		print(a)
+		return (np.argmax(a),np.max(a))
+
+	def Viterbi(self, K, obs):
+		d = [[self.Pi[i]*self.B[i][self.obsTo(self,obs)]] for i in range(self.N)]
+		psi = [self.obsTo(self,obs)]
+		for t in range(K):
+			for i in range(self.N):
+				arg,m = self.FindBest(i,t,d)
+				print(arg,m,i,t)
+				psi.append(arg)
+				d[i].append(m*self.B[i][psi[-1::][0]])
+
+
 	def Baum_Welch(self):
 		for iter in range(200):
-			print(iter)
-			self.show()
 			self.SForward()
 			self.SBackWard()
+
 			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
-			
+			for t in range(self.T-1):
+				for q in range(self.N):
+					for s in range(self.N):
+						ksi[t][q][s] = self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
+
+			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
+			pro = 0
+			for i in range(self.N):
+				pro+=self.alfa[self.T-1][i]
+			for t in range(self.T):
+				s1=0
+				for j in range(self.N):
+					s1+=self.beta[t][j]*self.alfa[t][j]
+				for i in range(self.N):
+					gama[t][i] = gama[t][i]/s1
+			for t in range(self.T-1):
+				s2=0
+				for q in range(self.N):
+					for s in range(self.N):
+						s2+= self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
+				for q in range(self.N):
+					for s in range(self.N):
+						ksi[t][q][s] = ksi[t][q][s]/s2
+				
+			for i in range(self.N):
+				self.Pi[i] = gama[0][i];
 			for i in range(self.N):			
 				for j in range(self.N):
 					s2 = 0
@@ -205,22 +246,20 @@ class SHMM(MM):
 
 			for i in range(self.N):
 				s1=0
-				for j in range(self.N):
-					for t in range(self.T-1):
-						s1+=ksi[t][i][j]
+				for t in range(self.T-1):
+						s1+=gama[t][i]
 				for j in range(self.N):
 					self.A[i][j] =self.A[i][j]/s1
 
-			for k in range(self.N):
-				for j in range(self.N):
-					s2=0
+			for j in range(self.N):
+				for k in range(self.L):
 					s1=0
-					for i in range(self.N):
-						for t in range(self.T-1):
-							s2+=ksi[t][i][j]
-							if (self.obsTo(self,self.obs[t]) == k):
-								s1+=ksi[t][i][j]
-						self.B[j][k] = s1/s2
+					s2=0
+					for t in range(self.T):
+						s1+=gama[t][j]
+						if (self.obsTo(self,self.obs[t]) == k): s2+=gama[t][j]
+					self.B[j][k] = s2/s1
+			
 
 if __name__ == '__main__':
 	main()
