@@ -216,7 +216,7 @@ class SHMM(MM):
 	
 	def SBackWard(self):
 		self.BackWard()
-		self.beta =  [[self.Bbeta[t][i]/self.Pro[t] for i in range(self.N)] for t in range(self.T)]
+		self.beta =  [[self.Bbeta[t][i]/self.Pro[self.T-1-t] for i in range(self.N)] for t in range(self.T)]
 
 	def FindBest(self,i,t,d):
 		a = [ d[j][t-1]*self.A[j][i] for j in range(self.N)]
@@ -343,7 +343,7 @@ class CGMHMM(MM):
 	def SBackWard(self):
 		self.BackWard()
 		#self.beta = self.Bbeta
-		self.beta =  [[self.Bbeta[t][i]/self.Pro[t] for i in range(self.N)] for t in range(self.T)]
+		self.beta =  [[self.Bbeta[t][i]/self.Pro[self.T-1-t] for i in range(self.N)] for t in range(self.T)]
 
 	def FindBest(self,i,t,d):
 		a = [ d[j][t-1]*self.A[j][i] for j in range(self.N)]
@@ -365,7 +365,6 @@ class CGMHMM(MM):
 		for q in range(self.N):
 			prob.append(self.B(q,obs))
 		prob = normalize(prob)
-		print(prob)
 		for q in range(self.N):
 			for i in range(n-1):
 				s+=prob[q]*self.PredictCrisisN(i,q)
