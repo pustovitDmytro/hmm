@@ -415,8 +415,8 @@ class CGMHMM(MM):
 					self.A[i][j] =self.A[i][j]/s1
 			#print(iter,ksi[-10::],"\nalfa",self.alfa[-10::],"\nbeta",self.Bbeta[-10::],self.beta[-10::])
 			#print(iter, self.A)
-			#ngama = [[[gama[t][i]*self.w[k][i]*self.GuausB(i,k,self.obs[t])/self.B(i,self.obs[t]) for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
-			ngama = [[[gama[t][i] for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
+			ngama = [[[gama[t][i]*self.w[k][i]*self.GuausB(i,k,self.obs[t])/self.B(i,self.obs[t]) for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
+			#ngama = [[[gama[t][i] for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
 			
 			for i in range(self.N):
 				for k in range(self.M):

@@ -29,6 +29,7 @@ def standart_instate(self,obs):
 		return 3
 	else:
 		return 4
+
 def yinstate(obs,y):
 	mean = statistics.mean(y)
 	stdev = statistics.stdev(y)
@@ -42,6 +43,7 @@ def yinstate(obs,y):
 		return 3
 	else:
 		return 4
+
 def standart_means(y):
 	mean = statistics.mean(y)
 	stdev = statistics.stdev(y)
@@ -65,6 +67,7 @@ def getcolor(i):
 		return '#99ff00'
 	else:
 		return 'white'
+		
 def main():
 	N=365
 	x = range(N)
@@ -101,9 +104,9 @@ def main():
 	##addplot = plt.plot(x, np.full(N,st_mu[0]),x, np.full(N,st_mu[1]),x, np.full(N,st_mu[2]),x, np.full(N,st_mu[3]),x, np.full(N,st_mu[4]))
 	##plt.setp(addplot, color='g', linewidth=2.0)
 	#
-	mu = [st_mu]
-	sig = [list(np.full(5,0.6))]
-	w = [list(np.full(5,1))]
+	mu = [list(map(lambda x: x-0.1,st_mu)),list(map(lambda x: x+0.1,st_mu))]
+	sig = [list(np.full(5,0.6)),list(np.full(5,0.6))]
+	w = [list(np.full(5,0.5)),list(np.full(5,0.5))]
 	#
 	model = hmm.CGMHMM(5,y,standart_instate,mu,sig,w)
 	model.Baum_Welch()
@@ -138,9 +141,9 @@ def main():
 	
 	np.savetxt('test1_1.txt',model.A,delimiter='\t',fmt='%1.8e')
 	
-	names = ['A','B','C','D','E']
-	x_range = [173,185,187,189,193]
-	for i in range(5):
+	names = ['A','B','C','D','E',"F","G"]
+	x_range = [93,95,97,98,99,100,104]
+	for i in range(7):
 		plt.annotate(names[i], xy=(x_range[i], y[x_range[i]]), xytext=(x_range[i]-5,y[x_range[i]]), arrowprops=dict(facecolor='black',width=0.5, headwidth=0.5))
 		print(names[i])
 		state = standart_instate(first_model,y[x_range[i]])

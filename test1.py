@@ -1,9 +1,19 @@
-import math
+import matplotlib.pyplot as plt
+import statistics
 import numpy as np
-x = [1,2,3,4,5,6,7,8,9]
-#y = list(map(lambda x: math.sin(x),x))
-#print (y)
-y = [[1,2],[3,4]]
-np.savetxt('work.txt',y,delimiter='\t',fmt='%1.8e')
-z = np.loadtxt('work.txt',delimiter='\t')
-print(z)
+import os
+import math
+import hmm
+def main():
+	N=4
+	M = 2
+	x_i = range(N)
+	x  = np.random.binomial(3,0.3,N)
+	mu = [0,1,0,1,0]
+	sig = [0.4,0.4,0.4,0.4]
+	print(x)
+	print(mu)
+	print(sig)
+
+if __name__ == '__main__':
+	main()
