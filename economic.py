@@ -104,49 +104,22 @@ def main():
 	first_model=hmm.MM(5,y,standart_instate)
 	first_model.find_probs()
 	#
-	second_model=hmm.SHMM(5,5,y[:100:],standart_instate,standart_instate)
+	second_model=hmm.SHMM(5,5,y[-100::],standart_instate,standart_instate)
 	second_model.Baum_Welch()	
 	#
-	st_mu = standart_means(y)
+	st_mu = standart_means(y[-100::])
 	
-	mu = [st_mu]
-	sig = [list(np.full(5,0.6))]
-	w = [list(np.full(5,1))]
+	mu = [list(map(lambda x: x-0.1,st_mu)),list(map(lambda x: x+0.1,st_mu))]
+	sig = [list(np.full(5,0.6)),list(np.full(5,0.6))]
+	w = [list(np.full(5,0.5)),list(np.full(5,0.5))]
 	#
-	model = hmm.CGMHMM(5,y[:100:],standart_instate,mu,sig,w)
+	model = hmm.CGMHMM(5,y[-100::],standart_instate,mu,sig,w)
 	model.Baum_Welch()
-	#Show predicition
-	#for i in [0,1,2,3,4]:
-	#	print(i,model.PredictCrisis(4,i))
-	#for i in [0,1,2,3,4]:
-		#print(i,first_model.PredictCrisis(4,i))
-	#s=-2
-	#for i in [0,1,2,3,4]:
-	#	print(i,second_model.PredictCrisis(4,i))
-	#for i in range(70):
-	#	print("s = ",s)
-	#	print("crisis = ",model.Crisis(5,s))
-	#	s+=0.1
-	#show models
+
+	
 	first_model.show()
 	second_model.show()
 	model.show()
-	#plt.title(u'Неперервний прихований ланцюг Маркова з Гаусівськими компонентами')
-	for s in [0,1,2,3,4]:
-		first = True
-		prob = first_model.PredictCrisis(4,s)
-		margins = getMargins(s,y)
-		#print(s,prob,margins)
-		for i in margins:
-			if first: 
-				first = False
-				plt.fill_between(i,min(y),max(y),alpha=0.3,label="P(Crisis)>"+str(round(prob,3)), color=getcolor(s))
-			else: plt.fill_between(i,min(y),max(y),alpha=0.3, color=getcolor(s))
-	plt.legend(loc='upper center',fancybox=True, shadow=True, ncol=3)
-		
-	#plt.legend(('y', 'кризові ситуації'),loc=1, frameon=True)
-	plt.show()
-	#plt.savefig('test Marcov', fmt='png')
 	
 if __name__ == '__main__':
 	main()
