@@ -11,18 +11,7 @@ def binom_instate(self,obs):
 def normalize(a):
 	return list(map(lambda x: x/sum(a),a)) 
 def main():
-	N=100
-	obs = np.random.binomial(1,0.35,N)
-	model = HMM(2,2,obs,binom_instate,binom_instate)
-	model.Baum_Welch()
-	model.show()
-	smodel = MM(2,obs,binom_instate)
-	smodel.find_probs()
-	smodel.show()
-	tmodel = SHMM(2,2,obs,binom_instate,binom_instate)
-	tmodel.Baum_Welch()
-	tmodel.show()
-	tmodel.Viterbi(5,1)
+	print("No test specified")
 
 class MM():
 	__metaclass__ = ABCMeta
@@ -73,7 +62,14 @@ class MM():
 		print("Simple markov model:")
 		print('A:\n',self.A)
 		print('Pi:\n',self.Pi)
-        		
+	def print(self, filename, form="%1.4e"):
+		f=open(filename, 'wb')
+		f.write(b'A\n')
+		np.savetxt(f,self.A,delimiter='\t',fmt=form)
+		f.write(b'pi\n')
+		np.savetxt(f,self.Pi,delimiter='\t',fmt=form)
+		f.close()	
+
 class HMM(MM):
 	def __init__(self, n , l, ob,funcA,funcB):
 		super(HMM,self).__init__(n,ob,funcA)
@@ -232,7 +228,13 @@ class SHMM(MM):
 				d[i].append(m*self.B[i][psi[-1::][0]])
 		return psi
 
-
+	def print(self, filename, form="%1.4e"):
+		super(SHMM,self).print(filename, form)
+		f=open(filename, 'ab')
+		f.write(b'B\n')
+		np.savetxt(f,self.B,delimiter='\t',fmt=form)
+		f.close()	
+	
 	def Baum_Welch(self):
 		for iter in range(50):
 			self.SForward()
@@ -288,11 +290,16 @@ class SHMM(MM):
 						if (self.obsTo(self,self.obs[t]) == k): s2+=gama[t][j]
 					self.B[j][k] = s2/s1
 class CGMHMM(MM):
-	def __init__(self, n , ob,funcA,mu,sig,w):
-		super(CGMHMM,self).__init__(n,ob,funcA)
+	def __init__(self, n , ob,funcA,mu,sig,w,dim=1):
+		self.N = n
+		self.T = len(ob)
+		self.obs = ob
+		self.A = [[1./self.N for i in range(self.N)] for j in range(self.N)]
+		self.Pi = [1./self.N for i in range(self.N)]
 		self.M = len(mu)
 		self.mu = mu
 		self.sig = sig
+		self.dim = dim
 		self.w = w
 	def B(self,j,x):
 		s=0
@@ -300,8 +307,19 @@ class CGMHMM(MM):
 			s+=self.w[k][j]*self.GuausB(j,k,x)
 		return s
 	def GuausB(self,j,k,x):
-		res =  math.exp(-(x-self.mu[k][j])**2/(2*self.sig[k][j]**2))/((2*math.pi)**0.5*self.sig[k][j])
-		if math.isnan(res): print(res , x,self.mu[k][j],self.sig[k][j],k,j)
+		if self.dim>1: 
+			mu = np.asarray(self.mu[k][j]).reshape(-1)
+			#print("x=",x,"\nsig=",self.sig[k][j],"\nmu=",mu)
+			x= np.matrix(x)
+			x=x.T
+			mu= np.matrix(mu)
+			mu=mu.T
+			sig = np.matrix(self.sig[k][j])
+			res =  math.exp(-0.5*(x-mu).T*sig.I*(x-mu))/((2*math.pi)**0.5*np.linalg.det(sig)**0.5)
+			#print(res)
+		else:
+			res =  math.exp(-(x-self.mu[k][j])**2/(2*self.sig[k][j]**2))/((2*math.pi)**0.5*self.sig[k][j])
+		#if math.isnan(res): print(res , x,self.mu[k][j],self.sig[k][j],k,j)
 		return res
 	def show(self):
 		print("continious gausian mixture:")
@@ -370,11 +388,22 @@ class CGMHMM(MM):
 				s+=prob[q]*self.PredictCrisisN(i,q)
 		return s
 
+	def print(self, filename, form="%1.4e"):
+		super(CGMHMM,self).print(filename, form)
+		f=open(filename, 'ab')
+		f.write(b'mu\n')
+		np.savetxt(f,self.mu,delimiter='\t',fmt=form)
+		f.write(b'sig\n')
+		np.savetxt(f,self.sig,delimiter='\t',fmt=form)
+		f.write(b'w\n')
+		np.savetxt(f,self.w,delimiter='\t',fmt=form)
+		f.close()
+
 	def Baum_Welch(self):
 		for iter in range(20):
+			self.old = self.A
 			self.SForward()
 			self.SBackWard()
-
 			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B(s,self.obs[t+1])*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
 			for t in range(self.T-1):
 				for q in range(self.N):
@@ -416,21 +445,45 @@ class CGMHMM(MM):
 			#print(iter,ksi[-10::],"\nalfa",self.alfa[-10::],"\nbeta",self.Bbeta[-10::],self.beta[-10::])
 			#print(iter, self.A)
 			ngama = [[[gama[t][i]*self.w[k][i]*self.GuausB(i,k,self.obs[t])/self.B(i,self.obs[t]) for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
+			#print("\ngama =\n",gama[5],"\n ngama = \n",ngama[5])
 			#ngama = [[[gama[t][i] for i in range(self.N)]for k in range(self.M)] for t in range(self.T)]
 			
-			for i in range(self.N):
-				for k in range(self.M):
-					s1=s2=s3=s4=0
-					for t in range(self.T):
-						s1+=gama[t][i]
-						s2+=ngama[t][k][i]
-						s3+=ngama[t][k][i]*self.obs[t]
-						s4+=ngama[t][k][i]*(self.obs[t]-self.mu[k][i])**2
-					self.mu[k][i] = s3/s2
-					self.w[k][i] = s2/s1
-					self.sig[k][i] = s4/s2
-					if self.sig[k][i]<0.3:self.sig[k][i] = 0.3
-			#print(iter, self.Pro[self.T-1])
-			#if iter==1: self.show()
+			if self.dim>1:
+				for i in range(self.N):
+					for k in range(self.M):
+						s1=s2=0
+						s3 = [0 for j in range(self.dim)]
+						s4 = [[0 for j in range(self.dim)] for index in range(self.dim)]
+						for t in range(self.T):
+							s1+=gama[t][i]
+							s2+=ngama[t][k][i]
+							for j in range(self.dim):
+								s3[j]+=ngama[t][k][i]*self.obs[t][j]
+							for j1 in range(self.dim):
+								for j2 in range(self.dim):
+									x= np.matrix(self.obs[t])
+									x=x.T
+									mu = np.matrix(self.mu[k][i])
+									mu=mu.T
+									s4[j1][j2]+=ngama[t][k][i]*float((x-mu)[j1]*(x-mu)[j2])
+						self.w[k][i] = s2/s1
+						self.sig[k][i] = [[s4[j1][j2]/s2 for j1 in range(self.dim)]for j2 in range(self.dim)]
+						if np.linalg.det(self.sig[k][i])<0.000001:
+							self.sig[k][i] = [[0.05 if i==j else 0 for i in range(self.dim)]for j in range(self.dim)]
+				break
+			else:	
+				for i in range(self.N):
+					for k in range(self.M):
+						s1=s2=s3=s4=0
+						for t in range(self.T):
+							s1+=gama[t][i]
+							s2+=ngama[t][k][i]
+							s3+=ngama[t][k][i]*self.obs[t]
+							s4+=ngama[t][k][i]*(self.obs[t] - self.mu[k][i])**2
+						self.w[k][i] = s2/s1
+						self.mu[k][i] = s3/s2
+						self.sig[k][i] = s4/s2
+						if self.sig[k][i]<0.3:
+							self.sig[k][i] = 0.3
 if __name__ == '__main__':
 	main()

@@ -32,27 +32,25 @@ def getMargins(state, y):
 				res.append(a)
 				a=[]
 	return res
-
+def normdata(i,x):
+	if min(x)==max(x): return 0
+	return (x[i]-min(x))/(max(x)-min(x))
+def GuausB(x,mu,sig):
+	mu = np.asarray(mu).reshape(-1)
+	#print("x=",x,"\nsig=",self.sig[k][j],"\nmu=",mu)
+	x= np.matrix(x)
+	x=x.T
+	mu= np.matrix(mu)
+	mu=mu.T
+	sig = np.matrix(sig)
+	res =  math.exp(-0.5*(x-mu).T*sig.I*(x-mu))/((2*math.pi)**0.5*np.linalg.det(sig)**0.5)
+	print((x-mu).T*sig.I*(x-mu))
+	print(res)
 def main():
-	y = np.loadtxt('data2.txt',delimiter='\t')
-	N = len(y)
-	x= range(N)
+	x= np.matrix([0.83647798742138357, 0.20276243901725813, 1.0, 0.76406025824964074, 0.0])
+	mu= np.matrix([ 0.76797675,  0.55465737,  0.74648533,  0.77541036,  1.00100756])
+	sig = np.matrix([[0.6 if i==j else 0 for i in range(5)]for j in range(5)])
+	GuausB(x,mu,sig)
 	
-	plt.plot(x, y,label="y", color='b')
-	plt.xlabel(u'time')
-	plt.ylabel(u'index')
-	plt.title(u'Тестові дані')
-	first = True
-	margins = getMargins(0,y)
-	for i in margins:
-		if first: 
-			first = False
-			plt.fill_between(i,min(y),max(y),alpha=0.3,label="Кризовий стан", color='r')
-		else: plt.fill_between(i,min(y),max(y),alpha=0.3, color='red')
-	plt.legend(loc='upper right',fancybox=True, shadow=True, ncol=3)
-	plt.show()
-
-
-
 if __name__ == '__main__':
 	main()

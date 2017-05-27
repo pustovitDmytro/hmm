@@ -36,7 +36,7 @@ def singleprepare(input,output,format = "%d.%m.%Y", prev="24.10.2014"):
 start = date(2014,10,24)
 end = date(2017,4,3)
 print(end-start+ timedelta(days=1))
-singleprepare("bezrobitta.mine","bezr893.data")
+singleprepare("raw_data/bezrobitta.mine","bezr893.data")
 
 
 
