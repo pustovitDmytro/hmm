@@ -172,7 +172,8 @@ class SHMM(MM):
 		self.B = [[ self.initB(i,j) for i in range(self.N)]for j in range(self.L)]
 		self.obsTo=funcB		       
 	def initB(self,i,j):
-		if i==j:
+		a=(self.N-1)/(self.L-1)
+		if i==int(j*a):
 			return .7
 		else:
 			return .3/(self.N-1)
@@ -184,11 +185,11 @@ class SHMM(MM):
 		print('B:\n',self.B)
 
 	def Forward(self):
-		alfa = [[self.Pi[i]*self.B[i][self.obsTo(self,self.obs[0])] if t==0 else 0 for i in range(self.N)] for t in range(self.T)]
+		alfa = [[self.Pi[i]*self.B[self.obsTo(self,self.obs[0])][i] if t==0 else 0 for i in range(self.N)] for t in range(self.T)]
 		for t in range(1,self.T):
 			for i in range(self.N):
 				for j in range(self.N):
-					alfa[t][i]+=alfa[t-1][j]*self.A[j][i]*self.B[i][self.obsTo(self,self.obs[t])]
+					alfa[t][i]+=alfa[t-1][j]*self.A[j][i]*self.B[self.obsTo(self,self.obs[t])][i]
 		self.Falfa = alfa
 
 	def BackWard(self):
@@ -196,7 +197,7 @@ class SHMM(MM):
 		for t in range(self.T-1,0,-1):
 			for i in range(self.N):
 				for j in range(self.N):
-					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[j][self.obsTo(self,self.obs[t])]
+					beta[t-1][i]+=beta[t][j]*self.A[i][j]*self.B[self.obsTo(self,self.obs[t])][j]
 		self.Bbeta = beta;
 	def FindPro(self):
 		self.Pro = []
@@ -240,11 +241,11 @@ class SHMM(MM):
 			self.SForward()
 			self.SBackWard()
 
-			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
+			ksi = [[[self.alfa[t][q]*self.A[q][s]*self.B[self.obsTo(self,self.obs[t+1])][s]*self.beta[t+1][s] for q in range(self.N)]for s in range(self.N)] for t in range(self.T-1)]
 			for t in range(self.T-1):
 				for q in range(self.N):
 					for s in range(self.N):
-						ksi[t][q][s] = self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
+						ksi[t][q][s] = self.alfa[t][q]*self.A[q][s]*self.B[self.obsTo(self,self.obs[t+1])][s]*self.beta[t+1][s]
 
 			gama  = [[self.beta[t][i]*self.alfa[t][i] for i in range(self.N)] for t in range(self.T)]
 			pro = 0
@@ -260,7 +261,7 @@ class SHMM(MM):
 				s2=0
 				for q in range(self.N):
 					for s in range(self.N):
-						s2+= self.alfa[t][q]*self.A[q][s]*self.B[s][self.obsTo(self,self.obs[t+1])]*self.beta[t+1][s]
+						s2+= self.alfa[t][q]*self.A[q][s]*self.B[self.obsTo(self,self.obs[t+1])][s]*self.beta[t+1][s]
 				for q in range(self.N):
 					for s in range(self.N):
 						ksi[t][q][s] = ksi[t][q][s]/s2
@@ -288,7 +289,7 @@ class SHMM(MM):
 					for t in range(self.T):
 						s1+=gama[t][j]
 						if (self.obsTo(self,self.obs[t]) == k): s2+=gama[t][j]
-					self.B[j][k] = s2/s1
+					self.B[k][j] = s2/s1
 class CGMHMM(MM):
 	def __init__(self, n , ob,funcA,mu,sig,w,dim=1):
 		self.N = n

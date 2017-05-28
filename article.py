@@ -17,8 +17,7 @@ def standart_instate(self,obs):
 	else:
 		return 4
 def goglobal(self,obs):
-	t = int(obs*10-12)
-	print(t)
+	t = 10 - int(obs*10-12)
 	return t
 def getcolor(i):
 	if i==0:
@@ -66,12 +65,14 @@ y = np.loadtxt('raw_data/proc_bezrobitta.txt',delimiter='\t')
 h= max(y)
 l= min(y)
 plt.plot(x, y,color='b')
-second_model=hmm.SHMM(10,10,y,standart_instate,goglobal)
+second_model=hmm.SHMM(5,5,y,standart_instate,standart_instate)
+second_model.show()
 second_model.Baum_Welch()
 second_model.show()
+second_model.print("article.txt")
 #second_model.print("files/test_model2.txt")
-#print("Prediction")
-#for i in [0,1,2,3,4]:
-#print("State ", i,"P(Crisis) = ", first_model.PredictCrisis(4,i))
+print("Prediction")
+for i in [0,1,2,3,4]:
+	print("State ", i,"P(Crisis) = ", second_model.PredictCrisis(4,i))
 
 plt.show()	
